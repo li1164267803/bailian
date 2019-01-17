@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/zuce.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="height">
+		    <div class="top">
+		        <div class="logo">
+		        	<div class="fl"><a href=""><img src="img/zuce/logo.png"></a></div>
+		            <div class="fl"><img src="img/zuce/zuce.png"></div>
+		        </div>
+		    </div>
+		</div>
+		<!--中间-->
+		<div class="zhong">
+			<div class="min">
+				<div class="min-top">
+	            <div class="min-info">您好，感谢您加入i百联</div>
+	            <div class="min-login">如有账号，请点击 <a href="">登录</a></div>
+	          </div>
+	          <!--中间底部-->
+	          <div class="min-bottom">
+	          	<div class="nei">
+	          		<form id="formRegister" action="" method="post" onsubmit="return false;">
+	          			<!--表单外壳的定位-->
+	          			<div class="ding">
+	          				<div class="kuai">
+	          					<ol>
+	          						<li class="name"><i>*</i> 用户名：</li>
+	          						<li class="input-div"><div class="input-input"><input type="text" placeholder="6-20位字符，支持字母或字母与数字组合" class="index1"/></div></li>
+	          						<ul class="prompt">
+	          							<li class="prompt-text"><i><img src="img/zuce/tanhao.gif" alt="" /></i><span>请输入用户名</span></li>
+	          							<li class="prompt-error"><i><img src="img/zuce/cuo.gif" alt="" /></i><span>请输入用户名</span></li>
+	          							<li class="prompt-correct"><i><img src="img/zuce/dui.gif" alt="" /></i><span></span></li>
+	          						</ul>
+	          					</ol>
+	          				</div>
+	          				<div class="kuai">
+	          					<ol>
+	          						<li class="name"><i>*</i> 登录密码：</li>
+	          						<li class="input-div"><div class="input-input"><input type="text" placeholder="8-20位字符，至少使用两种字符组合" class=" index2"/></div></li>
+	          						<ul class="prompt">
+	          							<li class="prompt-text"><i><img src="img/zuce/tanhao.gif" alt="" /></i><span>请输入登录密码</span></li>
+	          							<li class="prompt-error"><i><img src="img/zuce/cuo.gif" alt="" /></i><span>登陆密码必须是8-20位字符</span></li>
+	          							<li class="prompt-correct"><i><img src="img/zuce/dui.gif" alt="" /></i><span></span></li>
+	          						</ul>
+	          					</ol>
+	          				</div>
+	          				<div class="kuai">
+	          					<ol>
+	          						<li class="name"><i>*</i> 确认密码：</li>
+	          						<li class="input-div"><div class="input-input"><input type="text" placeholder="请再次输入密码" class="index2"/></div></li>
+	          						<ul class="prompt">
+	          							<li class="prompt-text"><i><img src="img/zuce/tanhao.gif" alt="" /></i><span>请确认密码</span></li>
+	          							<li class="prompt-error"><i><img src="img/zuce/cuo.gif" alt="" /></i><span>两次密码不一样</span></li>
+	          							<li class="prompt-correct"><i><img src="img/zuce/dui.gif" alt="" /></i><span></span></li>
+	          						</ul>
+	          					</ol>
+	          				</div>
+	          				<div class="kuai">
+	          					<ol>
+	          						<li class="name"><i>*</i> 手机号：</li>
+	          						<li class="input-div"><div class="input-input"><input type="text" placeholder="请输入11位手机号码" class="index3"/></div></li>
+	          						<ul class="prompt">
+	          							<li class="prompt-text"><i><img src="img/zuce/tanhao.gif" alt="" /></i><span>请输入手机号</span></li>
+	          							<li class="prompt-error"><i><img src="img/zuce/cuo.gif" alt="" /></i><span>请输入正确的手机号</span></li>
+	          							<li class="prompt-correct"><i><img src="img/zuce/dui.gif" alt="" /></i><span></span></li>
+	          						</ul>
+	          					</ol>
+	          				</div>
+	          				<div class="kuai">
+	          					<ol>
+	          						<li class="name"> 验证码：</li>
+	          						<li class="input-div"><div class="input-input"><input type="text" placeholder="请输入验证码" class="index2" id="yan"/></div></li>
+	          						<div class="register-code" id="yanzheng"></div>
+				                    <label class="ftx23">
+				                        <a class="flk13" id="toggleImgCode" href="javascript:void(0);">换一张</a>
+				                    </label>
+	          						<ul class="prompt">
+	          							<li class="prompt-text"><i><img src="img/zuce/tanhao.gif" alt="" /></i><span>请输入验证码</span></li>
+	          							<li class="prompt-error"><i><img src="img/zuce/cuo.gif" alt="" /></i><span>请输入用户名</span></li>
+	          							<li class="prompt-correct"><i><img src="img/zuce/dui.gif" alt="" /></i><span></span></li>
+	          						</ul>
+	          					</ol>
+	          				</div>
+	          				<div class="kuai">
+	          					<ol>
+	          						<li class="name"><i>*</i> 短信验证码：</li>
+	          						<li class="input-div"><div class="input-input"><input type="text" placeholder="请输入短信验证码" class="index2" id="yan"/></div></li>
+	          						<div class="get-code" style="float: left;"><button class="to-obtain">获取验证码</button><button class="send" style="display:none">重新获取</button></div>
+	          						<ul class="prompt">
+	          							<li class="prompt-text"><i><img src="img/zuce/tanhao.gif" alt="" /></i><span>请输入短信验证码</span></li>
+	          							<li class="prompt-error"><i><img src="img/zuce/cuo.gif" alt="" /></i><span>请输入正确的手机号</span></li>
+	          							<li class="prompt-correct"><i><img src="img/zuce/dui.gif" alt="" /></i><span></span></li>
+	          						</ul>
+	          					</ol>
+	          				</div>
+	          				<div class="kuai">
+	          					<ol>
+	          						<li class="name"> 电子邮箱：</li>
+	          						<li class="input-div"><div class="input-input"><input type="text" placeholder="请输入有效邮箱" class="index4"/></div></li>
+	          						<ul class="prompt">
+	          							<li class="prompt-text"><i><img src="img/zuce/tanhao.gif" alt="" /></i><span>请输入用户名</span></li>
+	          							<li class="prompt-error"><i><img src="img/zuce/cuo.gif" alt="" /></i><span>请输入用户名</span></li>
+	          							<li class="prompt-correct"><i><img src="img/zuce/dui.gif" alt="" /></i><span></span></li>
+	          						</ul>
+	          					</ol>
+	          				</div>
+	          				<div class="remember">
+	            				<label><i><input type="checkbox" class="xuan"/></i><span>我已阅读并同意</span></label>
+	            				<a id="agreement" href="http://help.bl.com/articleDetailed.html?articleId=382&&categoryType=help" target="_blank">《百联通会员注册协议》</a>
+	            			</div>
+				        	<div class="register-button">
+				        		<button type="button" class="sub">立即注册 完成绑定</button>
+				        	</div>
+	          			</div>
+	          		</form>
+	          	</div>
+	          </div>
+			</div>
+		</div>
+		<!--最底部-->
+		<div class="footer">
+			<div class="nav">
+				<div>
+					<a target="_blank" href="http://help.bl.com/articleDetailed.html?articleId=285&&categoryType=about">关于我们</a><span>|</span>
+					<a target="_blank" href="http://help.bl.com/articleDetailed.html?articleId=286&&categoryType=about">联系我们</a><span>|</span>
+					<a target="_blank" href="http://help.bl.com/articleDetailed.html?articleId=287&&categoryType=about">加盟合作</a><span>|</span>
+					<a target="_blank" href="http://help.bl.com/articleDetailed.html?articleId=288&&categoryType=about">诚征英才</a><span>|</span>
+					<a target="_blank" href="http://help.bl.com/articleDetailed.html?articleId=289&&categoryType=about">友情链接</a><span>|</span>
+				</div>
+				<div>
+					百联集团有限公司版权所有<span>|</span>客服电话：400-900-8800 <span>|</span>沪ICP备15028847号
+				</div>
+				<a target="_blank" href="https://res13.iblimg.com/respc-1/resources/v4.0/img/yaopingzigezheng.png">互联网药品信息服务资质证书编号：沪-（非营业性）-2016-0044</a><br />
+				<a target="_blank" href="http://promotion.bl.com/nc/PC_HDGL20180705000005986_6252.html">全渠道增值电信业务经营许可证</a>
+				<div>
+					<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010102002366">
+						<img src="https://res14.iblimg.com/respc-1/resources/v4.0/css/i/gongan.png" alt="" />
+						<span>沪公网安备 31010102002366号</span>
+					</a>
+					<a href="http://shwg.dianping.com/">
+						<img src="https://res15.iblimg.com/respc-1/resources/v4.1/widget/footer1200/i/wangjing.png" alt="" />
+						<span>网购大家评</span>
+					</a>
+					<a href="http://218.242.124.22:8081/businessCheck/verifKey.do?showType=extShow&serial=9031000020160729145737000001099658-SAIC_SHOW_310000-20160406145114141192&signData=MEYCIQCUhx+ulQL4t9jJgfgCH1oeTxexuWOVww3Hel3/UlRyLQIhAO2fVtZDl0EkYb0p/3M50cXqe694wDQoJNuUKNdQNOWf">
+						<img src="https://res12.iblimg.com/respc-1/resources/v4.1/widget/footer1200/i/gongs.png" alt="" width="20" height="21"/>
+						<span>上海工商</span>
+					</a>
+					<a href="http://promotion.bl.com/nc/PC_HDGL20170407000001552_1592.html">
+						<img src="https://res13.iblimg.com/respc-1/resources/v4.1/widget/footer1200/i/zhizhao.png" alt="" />
+						<span>经营执照</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	window.onload = function(){
+		function $id(id) {
+			return document.getElementById(id)
+		}
+		function rand(min, max) {
+			return Math.round(Math.random() * (max - min) + min)
+		}
+		function sui() {
+			var arr = [];
+			var arr1 = [];
+			for(i = 0; i < 6; i++) {
+				arr += String.fromCharCode(rand(65, 90));
+				arr += String.fromCharCode(rand(97, 122)).toUpperCase();
+				arr += rand(0, 9);
+			}
+			for(j = 0; j < 6; j++) {
+				arr1.push(arr[rand(0, arr.length - 1)]);
+			}
+			var str = arr1.join("")
+			$id("yanzheng").innerHTML = str;
+		}
+		
+		var $input = $(".kuai").find("input");
+		var $list = $(".prompt").find("li")
+		//用户名
+		var flagName = null;
+		$input.eq(0).blur(function(){
+			var reg = /^\w{6,20}$///用户名：6-20位字符，支持字母或字母与数字组合
+			var str = $(this).val();
+				if(  reg.test( str ) ){//正确
+					$(this).parent().parent().parent().find(".prompt-correct") .css("display","block") .siblings().css("display","none")
+					flagName = true;
+				}else{//错误
+					$(this).parent().parent().parent().find(".prompt-error").css("display","block").siblings().css("display","none")
+					flagName = false;
+				}
+		})
+		//密码
+		flagPwd = null;
+		$input.eq(1).blur(function(){//密码：8-20位字符，至少使用两种字符组合
+			var reg1 = /^\d$/
+			var reg2 = /^[a-z]+$/i
+			var reg3 = /^\W+$/
+			var reg4 = /\d+/
+			var reg5 = /\W+/
+			var reg6 = /[a-z]+/i
+			var str = $(this).val();
+			if(str.length < 8 || str.length > 20){
+					$(this).parent().parent().parent().find(".prompt-error").css("display","block").siblings().css("display","none");
+					flagPwd = false;
+			}else if(  reg1.test( str ) || reg2.test( str ) || reg3.test( str ) ){
+					$(this).parent().parent().parent().find(".prompt-error") .css("display","block") .siblings().css("display","none")
+					flagPwd = false
+			}else if( reg4.test( str ) && reg5.test( str ) && reg6.test( str ) ){
+					$(this).parent().parent().parent().find(".prompt-correct") .css("display","block") .siblings().css("display","none").end().find("span").html("强")
+					flagPwd = true
+			}else{//
+				flagPwd = true;
+				$(this).parent().parent().parent().find(".prompt-correct").css("display","block").siblings().css("display","none")
+			}
+		})
+		
+		//确认密码
+		var flagQpwd = null;
+		$input.eq(2).blur(function(){
+			var str = $input.eq(1).val()
+			var str1 = $(this).val();
+			if( str == str1 ){
+				flagQpwd = true;
+				$(this).parent().parent().parent().find(".prompt-correct") .css("display","block") .siblings().css("display","none")
+			}else{
+				flagQpwd = false;
+				$(this).parent().parent().parent().find(".prompt-error").css("display","block").siblings().css("display","none")
+			}
+		})
+		//手机号
+		var flagsj = null;
+		$input.eq(3).blur(function(){
+			var reg = /^1+\w{10}$///请输入11位手机号码
+			var str = $(this).val();
+				if(  reg.test( str ) ){//正确
+					flagsj = true;
+					$(this).parent().parent().parent().find(".prompt-correct") .css("display","block") .siblings().css("display","none")
+				}else{//错误
+					flagsj = false;
+					$(this).parent().parent().parent().find(".prompt-error").css("display","block").siblings().css("display","none")
+				}
+		})
+		
+		//验证码
+		sui();
+		var flagyan = null;
+		$input.eq(4).blur(function(){//请输入验证码
+			var str = $(this).val();
+			var str1 = $id("yanzheng").innerHTML;
+				if(  str == str1 ){//正确
+					flagyan = true;
+					$(this).parent().parent().parent().find(".prompt-correct") .css("display","block") .siblings().css("display","none")
+				}else{//错误
+					flagyan = false;
+					$(this).parent().parent().parent().find(".prompt-error").css("display","block").siblings().css("display","none")
+				}
+		})
+		$("#toggleImgCode").click(function(){
+			sui()
+		})
+		
+		
+		//短信验证码
+		var flagxin = null;
+		$input.eq(5).blur(function(){
+			var reg = /^1+\w{10}$/i
+			var str = $input.eq(3).val();
+				if( reg.test( str ) ){//正确
+					flagxin = true;
+				}else{//错误
+					flagxin = false;
+					$(this).parent().parent().parent().find(".prompt-error").css("display","block").siblings().css("display","none")
+				}
+		})
+		var ff = true;
+		$(".to-obtain").click(function(){
+			if(ff){
+				ff = false
+				var cunt = 59;
+				var timer = setInterval(function(){
+					$(this).html( cunt )
+					cunt--;
+					console.log(12)
+					if( cunt <=0 ){
+						$(this).html( "获取验证码" );
+						ff = true;
+						clearInterval(timer);
+					}
+				}.bind(this),1000)
+			}
+			
+		})
+		
+		//邮箱
+		var flagEmail = null;
+		$input.eq(6).blur(function(){
+			var reg = /^\w+@\w+(\.\w+)+$///请输入邮箱
+			var str = $(this).val();
+				if(  reg.test( str ) ){//正确
+					flagEmail = true;
+					$(this).parent().parent().parent().find(".prompt-correct") .css("display","block") .siblings().css("display","none")
+				}else{//错误
+					flagEmail = false
+					$(this).parent().parent().parent().find(".prompt-error").css("display","block").siblings().css("display","none")
+				}
+		})
+		
+		var chec = $(".xuan").prop("checked", true);
+		
+		var arr = [];
+		$(".sub").click(function(){
+			if( flagName && flagPwd && flagQpwd && flagsj && flagyan && flagxin && flagEmail ){
+				var json = {
+					flagName : $input.eq(0).val(),
+					flagPwd : $input.eq(1).val(),
+					flagQpwd : $input.eq(2).val(),
+					flagsj : $input.eq(3).val(),
+					flagyan : $input.eq(4).val(),
+					flagxin : $input.eq(5).val(),
+					flagEmail : $input.eq(6).val()
+				}
+				arr = getCookie("admin");
+				console.log(arr)
+				var flag = true;
+				if( arr.length != 0 ){
+					for(var i = 0 ; i < arr.length; i++){
+						if( json.flagName == arr[i].flagName ){
+							alert("该用户名已被注册")
+							flag = false;
+							break;
+						}
+					}
+				}
+//				console.log(json)
+				if(flag){
+					arr.push( json )
+					alert("注册成功")
+				}
+				setCookie("admin",JSON.stringify(arr));
+				console.log(arr)
+			}
+			
+		})
+		
+		$input.click(function(){
+			//点击时提示注册
+			$(this).parent().parent().parent().find(".prompt-text").css("display","block").siblings().css("display","none")
+		})
+	}
+
+</script>

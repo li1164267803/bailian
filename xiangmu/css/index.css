@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+i {
+  font-style: normal;
+}
+
+.test-normal {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transition: transform .5s;
+}
+
+.test-inverse {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transition: transform .5s;
+}
+
+.head {
+  height: 30px;
+  background: #f7f7f7;
+  font-size: 12px;
+}
+.head .wrap {
+  width: 1190px;
+  margin: 0 auto;
+}
+.head .wrap .bl-name {
+  background: url(//img.iblimg.com/respc-1/resources/v4.2/widget/tools1200/i/bl_logo_m.png) 2px center no-repeat;
+  padding: 0 10px 0 18px;
+  height: 30px;
+  line-height: 30px;
+  color: #8d8d8d;
+  width: 156px;
+  font-size: 12px;
+  float: left;
+}
+.head .wrap .bl-left {
+  position: relative;
+  float: left;
+  text-align: center;
+  height: auto;
+}
+.head .wrap .bl-left .gang {
+  margin-right: 10px;
+  line-height: 30px;
+  color: #999;
+}
+.head .wrap .bl-left:hover {
+  background: #fff;
+  box-shadow: 0 0 2px #CCC;
+}
+.head .wrap .bl-left:hover .bl-left-show {
+  border-top: none;
+  padding-top: 1px;
+  display: block;
+  position: absolute;
+  z-index: 2;
+}
+.head .wrap .bl-left a {
+  color: #666;
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+}
+.head .wrap .bl-left span {
+  float: left;
+}
+.head .wrap .bl-left i {
+  float: left;
+  display: inline-block;
+  width: 7px;
+  height: 4px;
+  margin-left: 7px;
+  background: url(//img.iblimg.com/respc-1/resources/v4.2/widget/tools1200/i/tools1200_sprite.png) no-repeat 0 -40px;
+  margin-top: 13px;
+}
+.head .wrap .bl-left .bl-left-show {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  top: 30px;
+  left: -1px;
+  display: none;
+}
+.head .wrap .bl-left .bl-left-show dl {
+  width: 222px;
+  line-height: 24px;
+}
+.head .wrap .bl-left .bl-left-show dl dd {
+  float: left;
+}
+.head .wrap .bl-left .bl-left-show dl dd:hover {
+  color: red;
+}
+.head .wrap .xiao {
+  float: left;
+  line-height: 30px;
+}
+.head .wrap .xiao a {
+  color: #666;
+  font-family: "Microsoft YaHei";
+}
+.head .wrap .bl-right {
+  float: right;
+  line-height: 30px;
+}
+.head .wrap .bl-right .youjian {
+  margin-right: 5px;
+  line-height: 30px;
+  position: relative;
+  top: -12px;
+  left: -5px;
+}
+.head .wrap .bl-right .denglu {
+  margin-right: 20px;
+}
+.head .wrap .bl-right a {
+  color: black;
+}
+.head .wrap .bl-right i {
+  float: right;
+  display: inline-block;
+  width: 7px;
+  height: 4px;
+  margin-left: 7px;
+  background: url(//img.iblimg.com/respc-1/resources/v4.2/widget/tools1200/i/tools1200_sprite.png) no-repeat 0 -40px;
+  margin-top: 13px;
+}
+.head .wrap .bl-right b {
+  position: absolute;
+  width: 1px;
+  height: 12px;
+  display: block;
+  top: 9px;
+  right: -1px;
+  background: url(//img.iblimg.com/respc-1/resources/v4.2/widget/tools1200/i/tools1200_sprite.png) no-repeat 0 -28px;
+  z-index: 2;
+}
+.head .wrap .bl-right li {
+  float: left;
+  position: relative;
+}
+.head .wrap .bl-right li:hover {
+  background: #FFf;
+}
+.head .wrap .bl-right li:hover .right-hdi {
+  display: block;
+  border-top: none;
+  padding-top: 1px;
+  position: absolute;
+  z-index: 2000;
+}
+.head .wrap .bl-right li:hover .divshow {
+  display: block;
+  border-top: none;
+  padding-top: 1px;
+  position: absolute;
+  z-index: 2000;
+}
+.head .wrap .bl-right li:hover .right-suidian {
+  display: block;
+  border-top: none;
+  padding-top: 1px;
+  position: absolute;
+  z-index: 2000;
+}
+.head .wrap .bl-right li a:hover {
+  color: red;
+}
+.head .wrap .bl-right li .leftfont {
+  margin: 0 10px;
+}
+.head .wrap .bl-right li .right-hdi {
+  display: none;
+  border: 1px solid #e2e2e2;
+  background: #fff;
+}
+.head .wrap .bl-right li .right-hdi dd {
+  margin-left: 10px;
+}
+.head .wrap .bl-right li .right-suidian {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  width: 450px;
+  padding: 15px;
+  left: 50%;
+  margin-left: -240px;
+  padding-bottom: 30px;
+  display: none;
+}
+.head .wrap .bl-right li .right-suidian .right-sui {
+  width: 450px;
+}
+.head .wrap .bl-right li .right-suidian dd {
+  float: left;
+  height: 126px;
+  padding-right: 16px;
+  padding-left: 20px;
+  background: url(../img/zuce/dingxu.gif) no-repeat right;
+}
+.head .wrap .bl-right li .right-suidian dd a {
+  display: block;
+}
+.head .wrap .bl-right li .divshow {
+  width: 310px;
+  left: 50%;
+  margin-left: -214px;
+  border: 1px solid #e2e2e2;
+  overflow: hidden;
+  position: absolute;
+  display: none;
+  background: #fff;
+}
+.head .wrap .bl-right li .right-rig {
+  float: left;
+  margin-left: 8px;
+  width: 141px;
+  text-align: center;
+  padding: 20px 0 4px;
+}
+.head .wrap .bl-right li .right-rig img {
+  width: 100px;
+  height: 100px;
+}
+.head .wrap .bl-right li .right-rig .right-top {
+  line-height: 20px;
+}
+.head .wrap .bl-right li .right-rig .right-hong {
+  color: red;
+  font-size: 10px;
+}
+
+.header {
+  height: 96px;
+  overflow: hidden;
+  clear: both;
+}
+.header .wrap {
+  height: 96px;
+  width: 1190px;
+  margin: 0 auto;
+  position: relative;
+}
+.header .logo {
+  width: 410px;
+  height: 60px;
+  float: left;
+  margin-top: 18px;
+}
+.header .logo .logo1 {
+  width: 190px;
+  float: left;
+}
+.header .logo .logo2 {
+  margin-left: 25px;
+}
+.header .header-r {
+  margin-top: 28px;
+  position: absolute;
+  right: 0;
+}
+.header .input-input {
+  float: left;
+}
+.header .input-input input {
+  border: 2px #ff3d3d solid;
+  border-right: none;
+  width: 406px;
+  height: 31px;
+}
+.header .input-input button {
+  width: 85px;
+  height: 35px;
+  border: 0;
+  margin-top: 1px;
+  background: #ff3d3d;
+  color: #fff;
+}
+.header .zhi {
+  float: left;
+  margin-right: 86px;
+}
+.header .zhi a {
+  border: 1px solid #ebebeb;
+  line-height: 33px;
+  margin-left: 52px;
+  height: 33px;
+  display: inline-block;
+  padding: 0 19px 0 12px;
+  background: url(../img/zuce/kayou.gif) no-repeat 138px;
+}
+.header .tui {
+  width: 490px;
+  height: 28px;
+  clear: both;
+  line-height: 28px;
+  overflow: hidden;
+  font-family: 'Microsoft YaHei';
+  margin-left: -5px;
+}
+.header .tui a {
+  font-size: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #999;
+}
+.header .tui a:hover {
+  color: red;
+}
+
+.banner {
+  width: 100%;
+  height: 430px;
+}
+.banner .banner-wrap {
+  width: 100%;
+  height: 430px;
+  margin: 0 auto;
+  position: relative;
+}
+.banner .banner-wrap ul {
+  position: relative;
+}
+.banner .banner-wrap ul li {
+  width: 100%;
+  height: 430px;
+  position: absolute;
+  background: yellow;
+}
+.banner .banner-wrap ul li a {
+  background-size: auto 100%;
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -392px;
+}
+.banner .banner-wrap ul li a img {
+  height: 430px;
+}
+.banner .banner-wrap ol {
+  position: absolute;
+  bottom: 10px;
+  width: 190px;
+  left: 50%;
+  margin-left: -95px;
+}
+.banner .banner-wrap ol li {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: default;
+  background-color: #abc;
+}
+.banner .banner-wrap ol .current {
+  background-color: pink;
+}
+
+/*# sourceMappingURL=index.css.map */

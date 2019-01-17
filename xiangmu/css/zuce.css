@@ -1,0 +1,273 @@
+@charset "UTF-8";
+/*注册css*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  font-style: normal;
+}
+
+body {
+  background: #f9f9f8;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+.top {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.logo {
+  float: left;
+  margin-top: 29px;
+}
+
+.fl {
+  float: left;
+  display: inline;
+}
+.fl a:link {
+  color: #666;
+  text-decoration: none;
+}
+
+.zhong {
+  height: auto;
+  margin-top: 30px;
+}
+.zhong .min {
+  margin: 0px auto;
+  width: 950px;
+  height: 635px;
+  background: #fff;
+  border: 1px solid #e1dfda;
+}
+.zhong .min .min-top {
+  height: 30px;
+  border-bottom: 1px solid #e1dfda;
+  padding: 10px 20px;
+  line-height: 30px;
+}
+.zhong .min .min-info {
+  float: left;
+  font-size: 16px;
+  font-family: 'Microsoft YaHei';
+  color: #ff002a;
+}
+.zhong .min .min-login {
+  float: right;
+  font-family: 'Microsoft YaHei';
+  color: #63625d;
+  font-size: 12px;
+}
+.zhong .min .min-login a {
+  color: blue;
+}
+.zhong .min-bottom {
+  height: auto;
+  padding: 50px 0px 74px 191px;
+}
+.zhong .min-bottom .nei {
+  height: auto;
+}
+.zhong .min-bottom .nei .ding {
+  position: relative;
+  height: auto;
+}
+.zhong .min-bottom .nei .ding .kuai {
+  padding: 10px 0px;
+  background: #fff;
+  overflow: hidden;
+}
+.zhong .min-bottom .nei .ding .kuai .name {
+  font-size: 15px;
+  font-family: 'Microsoft YaHei';
+  color: #333333;
+  float: left;
+  width: 136px;
+  text-align: right;
+  line-height: 36px;
+}
+.zhong .min-bottom .nei .ding .kuai .name i {
+  color: #df3d36;
+}
+.zhong .min-bottom .nei .ding .kuai .input-div {
+  float: left;
+  padding-left: 5px;
+  display: inline;
+}
+.zhong .min-bottom .nei .ding .kuai .input-div .input-input {
+  position: relative;
+}
+.zhong .min-bottom .nei .ding .kuai .input-div .input-input input {
+  line-height: 34px;
+  font-size: 16px;
+  vertical-align: middle;
+  padding: 0 10px 0 40px;
+  text-indent: 0px;
+  font-size: 12px;
+  font-family: 'Microsoft YaHei';
+  color: #000;
+  width: 258px;
+  height: 36px;
+  border: 1px solid #cccccc;
+}
+.zhong .min-bottom .nei .ding .kuai .prompt {
+  margin-left: 10px;
+  float: left;
+  line-height: 36px;
+}
+.zhong .min-bottom .nei .ding .kuai .prompt li {
+  display: none;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: 'Microsoft YaHei';
+}
+.zhong .min-bottom .nei .ding .kuai .prompt li i {
+  float: left;
+  width: 16px;
+  line-height: 0px;
+  height: 16px;
+  margin-top: 10px;
+}
+.zhong .min-bottom .nei .ding .kuai .prompt li span {
+  padding-right: 6px;
+  margin-left: 8px;
+  display: inline;
+  font-size: 12px;
+}
+.zhong .min-bottom .nei .ding .kuai .index1 {
+  background: url(../img/zuce/rentou.gif) no-repeat 10px 9px;
+}
+.zhong .min-bottom .nei .ding .kuai .index2 {
+  background: url(../img/zuce/suo.gif) no-repeat 10px 9px;
+}
+.zhong .min-bottom .nei .ding .kuai .index3 {
+  background: url(../img/zuce/shouji.gif) no-repeat 10px 9px;
+}
+.zhong .min-bottom .nei .ding .kuai .index4 {
+  background: url(../img/zuce/youxiang.gif) no-repeat 10px 9px;
+}
+.zhong .min-bottom .nei .ding .kuai #yan {
+  width: 158px;
+  height: 36px;
+}
+.zhong .min-bottom .nei .ding .kuai .register-code {
+  float: left;
+  width: 90px;
+  height: 36px;
+  margin: 0 11px 0 10px;
+}
+.zhong .min-bottom .nei .ding .kuai .register-code img {
+  width: 90px;
+  height: 36px;
+}
+.zhong .min-bottom .nei .ding .kuai .ftx23 {
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  color: #706e69;
+  font-family: 'Microsoft YaHei';
+}
+.zhong .min-bottom .nei .ding .kuai .get-code {
+  line-height: 36px;
+  margin-left: 10px;
+  color: #999999;
+}
+.zhong .min-bottom .nei .ding .kuai .get-code button {
+  margin-left: 10px;
+  width: 90px;
+  height: 36px;
+  border: 1px solid #c8c8c8;
+  background: #f5f5f5;
+  cursor: pointer;
+}
+.zhong .min-bottom #yanzheng {
+  text-align: center;
+  line-height: 36px;
+}
+.zhong .remember {
+  height: 25px;
+  padding-left: 140px;
+  line-height: 18px;
+  overflow: hidden;
+  padding-top: 5px;
+  color: #666666;
+  background: #fff;
+  font-size: 14px;
+}
+.zhong .remember label {
+  float: left;
+  cursor: pointer;
+  outline: none;
+  padding-right: 10px;
+}
+.zhong .remember label i {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  float: left;
+  margin-top: 2px;
+}
+.zhong .remember label span {
+  float: left;
+  margin-left: 24px;
+  display: inline;
+  font-family: 'Microsoft YaHei';
+}
+.zhong .register-button {
+  padding-left: 134px;
+  height: 36px;
+  overflow: hidden;
+}
+.zhong .register-button .sub {
+  width: 300px;
+  margin-left: 6px;
+  color: #ffffff;
+  background: #e6133c;
+  font-size: 16px;
+  height: 36px;
+  -webkit-border-radius: 2px;
+  cursor: pointer;
+  border: 0;
+  text-align: center;
+  font-family: 'Microsoft YaHei';
+  outline: none;
+}
+.zhong .register-button .sub:hover {
+  background: #fa2244;
+}
+
+.footer {
+  height: 200px;
+}
+.footer .nav {
+  line-height: 24px;
+  text-align: center;
+  padding-top: 10px;
+  color: #cccccc;
+  font-size: 12px;
+}
+.footer .nav span {
+  margin: 0 12px;
+}
+.footer .nav a {
+  color: black;
+}
+.footer .nav a:hover {
+  color: red;
+}
+
+/*# sourceMappingURL=zuce.css.map */
