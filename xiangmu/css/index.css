@@ -15,6 +15,87 @@ i {
   font-style: normal;
 }
 
+.fileheader {
+  position: fixed;
+  width: 100%;
+  z-index: 999999;
+  background: #fff;
+  display: none;
+}
+.fileheader .wrap {
+  width: 1190px;
+  height: 70px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+.fileheader .wrap .fen {
+  width: 52px;
+  float: left;
+  margin-top: 11px;
+  margin-right: 25px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+.fileheader .wrap .fen .navtite {
+  line-height: 20px;
+  font-family: 'Microsoft YaHei';
+  font-size: 12px;
+  color: #333;
+}
+.fileheader .wrap .fen .navicon {
+  width: 52px;
+  height: 39px;
+  line-height: 30px;
+  font-size: 20px;
+  background: #fff url(//img.iblimg.com/respc-1/resources/v4.1/widget/fileheader/i/filenavicon-1.png) no-repeat center 7px;
+  color: #bbb;
+}
+.fileheader .wrap .hear-logo {
+  float: left;
+  margin-top: 9px;
+  width: 380px;
+}
+.fileheader .wrap .search {
+  float: left;
+  height: 35px;
+  margin-top: 17px;
+  position: relative;
+}
+.fileheader .wrap .search input {
+  border: 2px #ff3d3d solid;
+  border-right: none;
+  width: 406px;
+  height: 31px;
+}
+.fileheader .wrap .search button {
+  width: 85px;
+  height: 35px;
+  border: 0;
+  margin-top: 1px;
+  background: #ff3d3d;
+  color: #fff;
+}
+.fileheader .wrap .fileheader-login {
+  float: right;
+  line-height: 70px;
+  font-family: 'Microsoft YaHei';
+  font-size: 15px;
+  margin-left: 5px;
+}
+.fileheader .wrap .fileheader-login span {
+  padding: 0 6px;
+}
+.fileheader .wrap .fileheader-login a {
+  max-width: 91px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+.fileheader .wrap .fileheader-login a:hover {
+  color: red;
+}
+
 .test-normal {
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
@@ -324,6 +405,92 @@ i {
 .banner {
   width: 100%;
   height: 430px;
+  position: relative;
+}
+.banner .banner-right {
+  height: 420px;
+  width: 215px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 5px;
+  margin-left: 393px;
+  z-index: 9999;
+  font-size: 12px;
+}
+.banner .banner-right .rig-header .tou {
+  vertical-align: -25px;
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: 14px;
+  margin-top: 16px;
+}
+.banner .banner-right .rig-header button {
+  color: #ff6f6f;
+  background: #fff3f5;
+  border: none;
+  width: 185px;
+  height: 26px;
+  margin-left: 14px;
+}
+.banner .banner-right .rig-header button:hover {
+  color: #fff;
+  background: #ff6f6f;
+}
+.banner .banner-right .rig-header .ddd {
+  position: relative;
+  top: -17px;
+  left: 70px;
+}
+.banner .banner-right .rig-header a:hover {
+  color: red;
+}
+.banner .rig-zhong {
+  height: 110px;
+  margin: 10px 15px 0;
+  font-family: '\5FAE\8F6F\96C5\9ED1';
+  background: url(//img.iblimg.com/respc-1/resources/v4.2/css/i/ban_tit11.png) no-repeat 0 0;
+  position: relative;
+  overflow: hidden;
+}
+.banner .rig-zhong .geng {
+  color: #999999;
+  float: right;
+}
+.banner .rig-zhong ol {
+  height: 75px;
+  margin-top: 30px;
+  line-height: 25px;
+}
+.banner .rig-zhong ol a {
+  color: black;
+}
+.banner .rig-zhong ol a:hover {
+  color: red;
+}
+.banner .right-bottom {
+  border-top: 1px solid #f2f2f2;
+  margin-top: 12px;
+}
+.banner .right-bottom li {
+  width: 71px;
+  float: left;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  text-align: center;
+  padding-top: 7px;
+  height: 53px;
+}
+.banner .right-bottom li a {
+  display: block;
+  text-align: center;
+}
+.banner .right-bottom li a div {
+  width: 42px;
+  height: 28px;
+  margin-left: 16px;
 }
 .banner .banner-wrap {
   width: 100%;
@@ -338,7 +505,7 @@ i {
   width: 100%;
   height: 430px;
   position: absolute;
-  background: yellow;
+  background-image: none;
 }
 .banner .banner-wrap ul li a {
   background-size: auto 100%;
@@ -369,6 +536,93 @@ i {
 }
 .banner .banner-wrap ol .current {
   background-color: pink;
+}
+
+.nav .wrap {
+  width: 1190px;
+  height: 35px;
+  margin: 0 auto;
+}
+.nav .wrap ul .ii {
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+  float: left;
+  margin-top: 12px;
+  margin-left: 13px;
+  background: url(//img.iblimg.com/respc-1/resources/v4.1/widget/nav1200/i/nav1200_sprite.png) no-repeat 0 -101px;
+}
+.nav .wrap ul .iia {
+  padding: 0 60px 0 20px;
+  color: #fff;
+}
+.nav .wrap ul li {
+  float: left;
+}
+.nav .wrap ul .nav-L {
+  background: #151515;
+  line-height: 35px;
+  position: relative;
+}
+.nav .wrap ul .nav-L .L-show {
+  position: absolute;
+  left: 0;
+  top: 35px;
+  z-index: 9999;
+  width: 203px;
+  height: 422px;
+  background: #353b33;
+  padding: 8px 0 0 0;
+}
+.nav .wrap ul .nav-L .L-show ul li {
+  height: 29px;
+  line-height: 29px;
+  width: 203px;
+}
+.nav .wrap ul .nav-L .L-show ul li a {
+  font-size: 10px;
+  color: #fff;
+  margin-left: 12px;
+  line-height: 29px;
+}
+.nav .wrap ul .nav-L .L-show ul li a:hover {
+  text-decoration: underline;
+}
+.nav .wrap ul .nav-L .L-show ul li i {
+  width: 14px;
+  height: 12px;
+  float: left;
+  margin-top: 3px;
+  margin-left: 13px;
+}
+.nav .wrap ul .nav-L .L-show ul li:hover {
+  background: #999;
+}
+.nav .wrap ul .nav-r {
+  padding: 0 18px;
+  line-height: 35px;
+  text-align: center;
+}
+.nav .wrap ul .nav-r a {
+  color: black;
+  font-weight: 700;
+}
+.nav .wrap ul .nav-r a:hover {
+  color: red;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("iconfont.eot");
+  src: url("iconfont.eot?#iefix") format("embedded-opentype"), url("iconfont.woff2") format("woff2"), url("iconfont.woff") format("woff"), url("iconfont.ttf") format("truetype"), url("iconfont.svg#iconfont") format("svg");
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
 }
 
 /*# sourceMappingURL=index.css.map */
