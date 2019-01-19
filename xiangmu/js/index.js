@@ -47,4 +47,42 @@ window.onload = function(){
 	},function(){
 		timer = setInterval(autoplay,2000);
 	})
+	
+//	banner图下的nav
+	$(".box-right").click(function(){
+		$(".box-list").animate( {left:-960},800,function(){
+			$(".box-right").css("display","none")
+			$(".box-left").css("display","block");
+		} )
+	})
+	$(".box-left").click(function(){
+		$(".box-list").animate( {left:0},800,function(){
+			$(".box-left").css("display","none")
+			$(".box-right").css("display","block");
+		} )
+	})
+	var $list = $(".box-list").children()
+	$list.hover(function(){
+		$(this).find("img").stop().animate( {width:154,height:154},300 );
+	},function(){
+		$(this).find("img").stop().animate( {width:140,height:140},300 )
+	})
+	var timerIndex = 0;
+	var timerOindex = 0;
+	var i = 0
+	setInterval(function(){
+		timerIndex++;
+		if( timerIndex == 4 ){
+			timerIndex = 1;
+		}
+		$(".xia-ol li a").eq( timerIndex-1 ).addClass("beijing").animate( { width : 36 },1000,function(){
+			timerOindex++;
+			if( timerOindex == 4 ){
+				timerOindex = 1;
+				$(".xia-ul").css("left",0)
+			}
+			$(".xia-ul").animate( {left : -305 * timerOindex},1000);
+//			$(this).siblings().removeClass()
+		} )
+	}.bind($(".xia-ol li a")),2000)
 }

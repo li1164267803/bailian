@@ -50,6 +50,50 @@ i {
   font-size: 20px;
   background: #fff url(//img.iblimg.com/respc-1/resources/v4.1/widget/fileheader/i/filenavicon-1.png) no-repeat center 7px;
   color: #bbb;
+  position: relative;
+}
+.fileheader .wrap .fen .navicon:hover {
+  background: black url(//img.iblimg.com/respc-1/resources/v4.1/widget/fileheader/i/filenavicon-1.png) no-repeat center 7px;
+  color: #fff;
+}
+.fileheader .wrap .fen .navicon:hover .L-show {
+  display: block;
+}
+.fileheader .wrap .fen .L-show {
+  position: absolute;
+  left: 0;
+  top: 39px;
+  z-index: 9999;
+  width: 203px;
+  height: 422px;
+  background: #353b33;
+  padding: 8px 0 0 0;
+  display: none;
+}
+.fileheader .wrap .fen .L-show ul li {
+  height: 29px;
+  line-height: 29px;
+  width: 203px;
+}
+.fileheader .wrap .fen .L-show ul li a {
+  font-size: 10px;
+  color: #fff;
+  float: left;
+  margin-left: 12px;
+  line-height: 29px;
+}
+.fileheader .wrap .fen .L-show ul li a:hover {
+  text-decoration: underline;
+}
+.fileheader .wrap .fen .L-show ul li i {
+  width: 14px;
+  height: 12px;
+  float: left;
+  margin-top: 3px;
+  margin-left: 13px;
+}
+.fileheader .wrap .fen .L-show ul li:hover {
+  background: #999;
 }
 .fileheader .wrap .hear-logo {
   float: left;
@@ -609,6 +653,144 @@ i {
 }
 .nav .wrap ul .nav-r a:hover {
   color: red;
+}
+
+.banner-bottom {
+  padding-top: 22px;
+}
+.banner-bottom .wrap {
+  width: 1190px;
+  margin: 0 auto;
+  height: 666px;
+}
+.banner-bottom .wrap .chao {
+  float: left;
+  width: 224px;
+  height: 250px;
+}
+.banner-bottom .wrap .box {
+  float: right;
+  position: relative;
+  overflow: hidden;
+  width: 966px;
+  height: 250px;
+  border: 1px solid #ebebeb;
+  border-left: none;
+  box-sizing: border-box;
+}
+.banner-bottom .wrap .box .box-right {
+  display: block;
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 100px;
+  z-index: 10;
+  background: #e5e5e5 url(../img/index/youjian.png) no-repeat center;
+}
+.banner-bottom .wrap .box .box-left {
+  display: none;
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  z-index: 10;
+  background: #e5e5e5 url(../img/index/zuojian.png) no-repeat center;
+}
+.banner-bottom .wrap .box-list {
+  width: 1932px;
+  position: absolute;
+  left: 0;
+}
+.banner-bottom .wrap .box-list li {
+  width: 160px;
+  height: 249px;
+  float: left;
+  z-index: 30;
+  border-right: 1px #999 dashed;
+  text-align: center;
+}
+.banner-bottom .wrap .box-list li div {
+  width: 154px;
+  height: 154px;
+  line-height: 154px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-bottom .wrap .box-list li img {
+  width: 140px;
+  height: 140px;
+  display: block;
+}
+.banner-bottom .wrap .box-list li p {
+  line-height: 20px;
+  height: 40px;
+  overflow: hidden;
+  font-size: 14px;
+  display: inline-block;
+  margin-left: 8px;
+  width: 150px;
+}
+.banner-bottom .wrap .box-list li span {
+  color: red;
+  float: left;
+  font-weight: 700;
+  margin-left: 8px;
+  margin-top: 5px;
+}
+.banner-bottom .wrap .box-list li i {
+  float: left;
+  font-size: 12px;
+  color: #999;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+.banner-bottom .wrap .box-xia {
+  clear: both;
+  padding-top: 20px;
+  height: 390px;
+  width: 1190px;
+}
+.banner-bottom .wrap .xia-left {
+  float: left;
+  width: 305px;
+  height: 370px;
+  background: red;
+  overflow: hidden;
+  position: relative;
+}
+.banner-bottom .wrap .xia-left img {
+  width: 305px;
+  height: 370px;
+}
+.banner-bottom .wrap .xia-left .xia-ul {
+  width: 100%;
+  position: absolute;
+  display: flex;
+}
+.banner-bottom .wrap .xia-left .xia-ul li {
+  float: left;
+  width: 305px;
+}
+.banner-bottom .wrap .xia-left .xia-ol li {
+  width: 30px;
+  height: 6px;
+  background: yellow;
+  position: relative;
+  z-index: 20;
+  float: left;
+  top: 340px;
+  left: 42px;
+}
+.banner-bottom .wrap .xia-left .xia-ol li a {
+  display: block;
+  height: 6px;
+}
+.banner-bottom .wrap .xia-left .xia-ol li .beijing {
+  height: 6px;
+  background: red;
 }
 
 @font-face {

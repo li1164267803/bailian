@@ -46,7 +46,54 @@ i{
                     font-size: 20px;
                     background: #fff url(//img.iblimg.com/respc-1/resources/v4.1/widget/fileheader/i/filenavicon-1.png) no-repeat center 7px;
                     color: #bbb;
+                    position: relative;
+                    &:hover{
+                        background: black url(//img.iblimg.com/respc-1/resources/v4.1/widget/fileheader/i/filenavicon-1.png) no-repeat center 7px;
+                        color: #fff;
+                        .L-show{
+                            display: block;
+                        }
+                    }
             }
+            .L-show{
+                    position: absolute;
+                    left: 0;
+                    top: 39px;
+                    z-index: 9999;
+                    width: 203px;
+                    height: 422px;
+                    background: #353b33;
+                    padding: 8px 0 0 0;
+                    display: none;
+                    ul{
+
+                        li{
+                            height: 29px;
+                            line-height: 29px;
+                            width: 203px;
+                            a{
+                                font-size: 10px;
+                                color: #fff;
+                                float:left;
+                                margin-left: 12px;
+                                line-height: 29px;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                            i{
+                                width: 14px;
+                                height: 12px;
+                                float: left;
+                                margin-top: 3px;
+                                margin-left: 13px;
+                            }
+                            &:hover{
+                                background: #999;
+                            }
+                        }
+                    }
+                }
         }
         .hear-logo{
                 float: left;
@@ -633,6 +680,159 @@ i{
         }
     }
 }
+
+
+//banner图下的nav
+.banner-bottom{
+    padding-top: 22px;
+    .wrap{
+        width: 1190px;
+        margin: 0 auto;
+        height: 666px;
+//      background: pink;
+        .chao{
+            float: left;
+            width: 224px;
+            height: 250px;
+        }
+        .box{
+            float: right;
+            position: relative;
+            overflow: hidden;
+            width: 966px;
+            height: 250px;
+            border: 1px solid #ebebeb;
+            border-left: none;
+            box-sizing: border-box;
+            .box-right{
+                display: block;
+                width: 20px;
+                height: 50px;
+                position: absolute;
+                right: 0;
+                top: 100px;
+                z-index: 10;
+                background: #e5e5e5 url(../img/index/youjian.png) no-repeat center;
+            }
+            .box-left{
+                display: none;
+                width: 20px;
+                height: 50px;
+                position: absolute;
+                left: 0;
+                top: 100px;
+                z-index: 10;
+                background: #e5e5e5 url(../img/index/zuojian.png) no-repeat center;
+            }
+        }
+        .box-list{
+            width: 1932px;
+            position: absolute;
+            left: 0;
+            li{
+                width: 160px;
+                height: 249px;
+                float: left;
+                z-index: 30;
+                border-right: 1px #999 dashed;
+                text-align: center;
+                div{
+                    width: 154px;
+                    height: 154px;
+                    line-height: 154px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                img{
+                    width: 140px;
+                    height: 140px;
+                    display: block;
+                }
+                p{
+                    line-height:20px;
+                    height: 40px;
+                    overflow: hidden;
+                    font-size: 14px;
+                    display: inline-block;
+                    margin-left: 8px;
+                    width: 150px;
+                }
+                span{
+                    color: red;
+                    float: left;
+                    font-weight: 700;
+                     margin-left: 8px;
+                     margin-top: 5px;
+                }
+                i{
+                    float: left;
+                    font-size: 12px;
+                    color: #999;
+                    margin-left: 8px;
+                    margin-top: 8px;
+                }
+            }
+        }
+        .box-xia{
+            clear: both;
+            padding-top: 20px;
+            height: 390px;
+            width: 1190px;
+        }
+        .xia-left{
+            float: left;
+            width: 305px;
+            height: 370px;
+            background: red;
+            overflow: hidden;
+            position: relative;
+            img{
+                width: 305px;
+                height: 370px;
+            }
+            .xia-ul{
+                width: 100%;
+                position: absolute;
+                display: flex;
+                li{
+                    float: left;
+                    width: 305px;
+                }
+            }
+            .xia-ol{
+                li{
+                    width: 30px;
+                    height: 6px;
+                    background: yellow;
+                    position: relative;
+                    z-index: 20;
+                    float: left;
+                    top: 340px;
+                    left: 42px;
+                    a{
+                        display: block;
+                        height: 6px;
+                    }
+                    .beijing{
+                        height: 6px;
+                        background: red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 @font-face {
   font-family: 'iconfont';

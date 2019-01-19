@@ -3,7 +3,6 @@
   .footnav .wrap {
     height: 200px;
     width: 1100px;
-    background: red;
     margin: 0 auto;
     display: flex;
     justify-content: space-between; }
@@ -13,7 +12,43 @@
       float: left;
       text-align: center;
       margin-top: 36px; }
+      .footnav .wrap dl .bei1 {
+        background: url(//img.iblimg.com/respc-1/resources/v4.2/widget/footer1200/i/footer1200_sprite.png) no-repeat 16px 0; }
+      .footnav .wrap dl .bei2 {
+        background: url(//img.iblimg.com/respc-1/resources/v4.2/widget/footer1200/i/footer1200_sprite.png) no-repeat 16px -40px; }
+      .footnav .wrap dl .bei3 {
+        background: url(//img.iblimg.com/respc-1/resources/v4.2/widget/footer1200/i/footer1200_sprite.png) no-repeat 16px -80px; }
+      .footnav .wrap dl .bei4 {
+        background: url(//img.iblimg.com/respc-1/resources/v4.2/widget/footer1200/i/footer1200_sprite.png) no-repeat 16px -120px; }
+      .footnav .wrap dl .bei5 {
+        background: url(//img.iblimg.com/respc-1/resources/v4.2/widget/footer1200/i/footer1200_sprite.png) no-repeat 16px -160px; }
+      .footnav .wrap dl dt {
+        height: 40px;
+        line-height: 40px; }
+      .footnav .wrap dl dd {
+        font-size: 10px;
+        line-height: 22px; }
+        .footnav .wrap dl dd a:hover {
+          color: red;
+          text-decoration: underline; }
       .footnav .wrap dl a {
         color: #999; }
+
+.footer {
+  height: 200px;
+  background: #f3f3f3;
+  padding: 15px 0 0; }
+  .footer .nav {
+    line-height: 24px;
+    text-align: center;
+    padding-top: 10px;
+    color: #cccccc;
+    font-size: 12px; }
+    .footer .nav span {
+      margin: 0 12px; }
+    .footer .nav a {
+      color: black; }
+      .footer .nav a:hover {
+        color: red; }
 
 /*# sourceMappingURL=public.css.map */
