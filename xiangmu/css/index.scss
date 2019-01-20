@@ -762,8 +762,8 @@ i{
                     color: red;
                     float: left;
                     font-weight: 700;
-                     margin-left: 8px;
-                     margin-top: 5px;
+                    margin-left: 8px;
+                    margin-top: 5px;
                 }
                 i{
                     float: left;
@@ -804,7 +804,7 @@ i{
                 li{
                     width: 30px;
                     height: 6px;
-                    background: yellow;
+                    background: #fff;
                     position: relative;
                     z-index: 20;
                     float: left;
@@ -814,9 +814,32 @@ i{
                         display: block;
                         height: 6px;
                     }
-                    .beijing{
-                        height: 6px;
-                        background: red;
+                }
+            }
+        }
+        .xia-right{
+            float: left;
+            ul{
+                width: 885px;
+                height: 370px;
+                float: left;
+                li{
+                    line-height: 285px;
+                    width: 285px;
+                    height: 180px;
+                    margin-left: 10px;
+                    margin-bottom: 10px;
+                    float: left;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+                    a{
+                    }
+                    img{
+                        width: 285px;
+                        height: 180px;
+                        display: block;
                     }
                 }
             }
@@ -824,7 +847,196 @@ i{
     }
 }
 
+//foor楼层
+.floor1{
+//  background: red;
+    margin-bottom: 20px;
+    .wrap{
+        width: 1190px;
+        margin: 0 auto;
+        height: 514px;
+//      background: pink;
+        h3{
+            height: 50px;
+            overflow: hidden;
+            font-weight: 600;
+            color: #333;
+            line-height: 50px;
+            font-size: 26px;
+            font-family: 'Microsoft YaHei';
+        }
+        .floor1-left{
+            float: left;
+            width: 305px;
+            height: 464px;
+            overflow: hidden;
+            position: relative;
+            img{
+                width: 306px;
+                height: 464px;
+            }
+            .xia-ul{
+                width: 100%;
+                position: absolute;
+                display: flex;
+                li{
+                    float: left;
+                    width: 305px;
+                    height: 430px;
+                }
+            }
+            .xia-ol{
+                li{
+                    width: 30px;
+                    height: 6px;
+                    background: #fff;
+                    position: relative;
+                    z-index: 20;
+                    float: left;
+                    top: 340px;
+                    left: 42px;
+                    a{
+                        display: block;
+                        height: 6px;
+                        background: red;
+                        width: 20px;
+                    }
+                }
+            }
+        }
+        .floor1-right{
+            width: 884px;
+            height: 464px;
+            float: left;
+            ul{
+                img{
+                    display: block;
+//                  &:hover{
+//                      margin-left: -10px;
+//                  }
+                }
+                .fast-img{
+                    width: 442px;
+                    height: 300px;
+                }
+                .fast2-img{
+                    width: 221px;
+                    height: 300px;
+                }
+                .last-img{
+                    background: #FFF;
+                    width: 221px;
+                    height: 164px;
+                    img{
+                        margin-top: 30px;
+                        width: 220px;
+                        height: 97px;
+                    }
+                }
+                li{
+                    overflow: hidden;
+                    float: left;
+                    box-sizing: border-box;
+                    border-bottom: 1px solid #ebebeb;
+                    border-right: 1px solid #ebebeb;
+                }
+            }
+        }
+    }
+}
 
+//二楼
+
+.floor2{
+//  background: red;
+    margin-bottom: 20px;
+    .wrap{
+        width: 1190px;
+        margin: 0 auto;
+        height: 514px;
+//      background: pink;
+        h3{
+            height: 50px;
+            overflow: hidden;
+            font-weight: 600;
+            color: #333;
+            line-height: 50px;
+            font-size: 26px;
+            font-family: 'Microsoft YaHei';
+        }
+        .floor2-left{
+            float: left;
+            width: 305px;
+            height: 464px;
+            overflow: hidden;
+            position: relative;
+            img{
+                width: 306px;
+                height: 464px;
+            }
+            .xia-ul{
+                width: 100%;
+                position: absolute;
+                display: flex;
+                li{
+                    float: left;
+                    width: 305px;
+                    height: 430px;
+                }
+            }
+            .xia-ol{
+                li{
+                    width: 30px;
+                    height: 6px;
+                    background: #fff;
+                    position: relative;
+                    z-index: 20;
+                    float: left;
+                    top: 340px;
+                    left: 42px;
+                    a{
+                        display: block;
+                        height: 6px;
+                        background: red;
+                        width: 20px;
+                    }
+                }
+            }
+        }
+        .floor2-right{
+            width: 884px;
+            height: 464px;
+            float: left;
+            ul{
+                border-top: 2px solid #ebebeb;
+                img{
+                    display: block;
+                }
+                .fast2-img{
+                    width: 221px;
+                    height: 300px;
+                }
+                .last-img{
+                    background: #FFF;
+                    width: 221px;
+                    height: 164px;
+                    img{
+                        margin-top: 30px;
+                        width: 220px;
+                        height: 97px;
+                    }
+                }
+                li{
+                    overflow: hidden;
+                    box-sizing: border-box;
+                    float: left;
+                    border-right: 1px solid #ebebeb;
+                    border-bottom: 1px solid #ebebeb;
+                }
+            }
+        }
+    }
+}
 
 
 

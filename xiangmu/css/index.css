@@ -777,7 +777,7 @@ i {
 .banner-bottom .wrap .xia-left .xia-ol li {
   width: 30px;
   height: 6px;
-  background: yellow;
+  background: #fff;
   position: relative;
   z-index: 20;
   float: left;
@@ -788,9 +788,205 @@ i {
   display: block;
   height: 6px;
 }
-.banner-bottom .wrap .xia-left .xia-ol li .beijing {
+.banner-bottom .wrap .xia-right {
+  float: left;
+}
+.banner-bottom .wrap .xia-right ul {
+  width: 885px;
+  height: 370px;
+  float: left;
+}
+.banner-bottom .wrap .xia-right ul li {
+  line-height: 285px;
+  width: 285px;
+  height: 180px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.banner-bottom .wrap .xia-right ul li img {
+  width: 285px;
+  height: 180px;
+  display: block;
+}
+
+.floor1 {
+  margin-bottom: 20px;
+}
+.floor1 .wrap {
+  width: 1190px;
+  margin: 0 auto;
+  height: 514px;
+}
+.floor1 .wrap h3 {
+  height: 50px;
+  overflow: hidden;
+  font-weight: 600;
+  color: #333;
+  line-height: 50px;
+  font-size: 26px;
+  font-family: 'Microsoft YaHei';
+}
+.floor1 .wrap .floor1-left {
+  float: left;
+  width: 305px;
+  height: 464px;
+  overflow: hidden;
+  position: relative;
+}
+.floor1 .wrap .floor1-left img {
+  width: 306px;
+  height: 464px;
+}
+.floor1 .wrap .floor1-left .xia-ul {
+  width: 100%;
+  position: absolute;
+  display: flex;
+}
+.floor1 .wrap .floor1-left .xia-ul li {
+  float: left;
+  width: 305px;
+  height: 430px;
+}
+.floor1 .wrap .floor1-left .xia-ol li {
+  width: 30px;
+  height: 6px;
+  background: #fff;
+  position: relative;
+  z-index: 20;
+  float: left;
+  top: 340px;
+  left: 42px;
+}
+.floor1 .wrap .floor1-left .xia-ol li a {
+  display: block;
   height: 6px;
   background: red;
+  width: 20px;
+}
+.floor1 .wrap .floor1-right {
+  width: 884px;
+  height: 464px;
+  float: left;
+}
+.floor1 .wrap .floor1-right ul img {
+  display: block;
+}
+.floor1 .wrap .floor1-right ul .fast-img {
+  width: 442px;
+  height: 300px;
+}
+.floor1 .wrap .floor1-right ul .fast2-img {
+  width: 221px;
+  height: 300px;
+}
+.floor1 .wrap .floor1-right ul .last-img {
+  background: #FFF;
+  width: 221px;
+  height: 164px;
+}
+.floor1 .wrap .floor1-right ul .last-img img {
+  margin-top: 30px;
+  width: 220px;
+  height: 97px;
+}
+.floor1 .wrap .floor1-right ul li {
+  overflow: hidden;
+  float: left;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+}
+
+.floor2 {
+  margin-bottom: 20px;
+}
+.floor2 .wrap {
+  width: 1190px;
+  margin: 0 auto;
+  height: 514px;
+}
+.floor2 .wrap h3 {
+  height: 50px;
+  overflow: hidden;
+  font-weight: 600;
+  color: #333;
+  line-height: 50px;
+  font-size: 26px;
+  font-family: 'Microsoft YaHei';
+}
+.floor2 .wrap .floor2-left {
+  float: left;
+  width: 305px;
+  height: 464px;
+  overflow: hidden;
+  position: relative;
+}
+.floor2 .wrap .floor2-left img {
+  width: 306px;
+  height: 464px;
+}
+.floor2 .wrap .floor2-left .xia-ul {
+  width: 100%;
+  position: absolute;
+  display: flex;
+}
+.floor2 .wrap .floor2-left .xia-ul li {
+  float: left;
+  width: 305px;
+  height: 430px;
+}
+.floor2 .wrap .floor2-left .xia-ol li {
+  width: 30px;
+  height: 6px;
+  background: #fff;
+  position: relative;
+  z-index: 20;
+  float: left;
+  top: 340px;
+  left: 42px;
+}
+.floor2 .wrap .floor2-left .xia-ol li a {
+  display: block;
+  height: 6px;
+  background: red;
+  width: 20px;
+}
+.floor2 .wrap .floor2-right {
+  width: 884px;
+  height: 464px;
+  float: left;
+}
+.floor2 .wrap .floor2-right ul {
+  border-top: 2px solid #ebebeb;
+}
+.floor2 .wrap .floor2-right ul img {
+  display: block;
+}
+.floor2 .wrap .floor2-right ul .fast2-img {
+  width: 221px;
+  height: 300px;
+}
+.floor2 .wrap .floor2-right ul .last-img {
+  background: #FFF;
+  width: 221px;
+  height: 164px;
+}
+.floor2 .wrap .floor2-right ul .last-img img {
+  margin-top: 30px;
+  width: 220px;
+  height: 97px;
+}
+.floor2 .wrap .floor2-right ul li {
+  overflow: hidden;
+  box-sizing: border-box;
+  float: left;
+  border-right: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
 }
 
 @font-face {
