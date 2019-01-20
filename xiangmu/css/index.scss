@@ -898,7 +898,6 @@ i{
                     a{
                         display: block;
                         height: 6px;
-                        background: red;
                         width: 20px;
                     }
                 }
@@ -911,9 +910,6 @@ i{
             ul{
                 img{
                     display: block;
-//                  &:hover{
-//                      margin-left: -10px;
-//                  }
                 }
                 .fast-img{
                     width: 442px;
@@ -946,7 +942,6 @@ i{
 }
 
 //二楼
-
 .floor2{
 //  background: red;
     margin-bottom: 20px;
@@ -997,7 +992,6 @@ i{
                     a{
                         display: block;
                         height: 6px;
-                        background: red;
                         width: 20px;
                     }
                 }
@@ -1038,6 +1032,207 @@ i{
     }
 }
 
+//公共部分
+@mixin lou-left{
+            float: left;
+            width: 305px;
+            height: 464px;
+            overflow: hidden;
+            position: relative;
+            img{
+                width: 306px;
+                height: 464px;
+            }
+            .xia-ul{
+                width: 100%;
+                position: absolute;
+                display: flex;
+                li{
+                    float: left;
+                    width: 305px;
+                    height: 430px;
+                }
+            }
+            .xia-ol{
+                li{
+                    width: 30px;
+                    height: 6px;
+                    background: #fff;
+                    position: relative;
+                    z-index: 20;
+                    float: left;
+                    top: 340px;
+                    left: 42px;
+                    a{
+                        display: block;
+                        height: 6px;
+                        width: 20px;
+                    }
+                }
+            }
+}
+@mixin lou-right{
+            width: 884px;
+            float: left;
+            ul{
+                border-top: 2px solid #ebebeb;
+                img{
+                    display: block;
+                }
+                .fast2-img{
+                    width: 221px;
+                    height: 300px;
+                }
+                .last-img{
+                    background: #FFF;
+                    width: 221px;
+                    img{
+                        width: 220px;
+                        height: 97px;
+                    }
+                }
+                li{
+                    overflow: hidden;
+                    box-sizing: border-box;
+                    float: left;
+                    border-right: 1px solid #ebebeb;
+                    border-bottom: 1px solid #ebebeb;
+                }
+            }
+}
+@mixin lou-right-borrom{
+        width: 883px;
+        float: left;
+        border-bottom: 1px solid #ebebeb;
+        border-right: 1px solid #ebebeb;
+        a{
+            float: left;
+            width: 147px;
+            height: 62px;
+            text-align: center;
+        }
+}
+//3楼
+.floor3{
+//  background: red;
+    margin-bottom: 20px;
+    .wrap{
+        width: 1190px;
+        margin: 0 auto;
+        height: 514px;
+//      background: pink;
+        h3{
+            height: 50px;
+            overflow: hidden;
+            font-weight: 600;
+            color: #333;
+            line-height: 50px;
+            font-size: 26px;
+            font-family: 'Microsoft YaHei';
+        }
+        .sanmin-left{
+            @include lou-left;
+        }
+        .sanmin-right{
+            @include lou-right
+        }
+        .sanmin-bottom{
+            @include lou-right-borrom;
+        }
+    }
+}
+
+@mixin loubig-right{
+            width: 884px;
+            float: left;
+            .sanbig-right-top{
+                width: 883px;
+                height: 301px;
+                display: flex;
+                border-top: 2px solid #ebebeb;
+                border-right: 1px solid #ebebeb;
+                border-bottom: 1px solid #ebebeb;
+            }
+            .sanbig-big{
+                width: 442px;
+                height: 300px;
+                overflow: hidden;
+               border-right: 2px solid #ebebeb;
+               border-bottom: 2px solid #ebebeb;
+            }
+            .sanbing-zhong{
+                width: 221px;
+                height: 300px;
+                overflow: hidden;
+                border-right: 1px solid #ebebeb;
+            }
+            .sanbing-rig{
+                width: 220px;
+                height: 300px;
+                overflow: hidden;
+                a{
+                    width: 220px;
+                    height: 151px;
+                    display: block;
+                    img{
+                        margin-top: 25px;
+                    }
+                }
+            }
+            ul{
+                img{
+                    display: block;
+                }
+                .fast2-img{
+                    width: 221px;
+                    height: 300px;
+                }
+                .last-img{
+                    background: #FFF;
+                    width: 221px;
+                    img{
+                        width: 220px;
+                        height: 97px;
+                    }
+                }
+                li{
+                    overflow: hidden;
+                    box-sizing: border-box;
+                    float: left;
+                    border: 1px solid #ebebeb;
+                    border-left: none;
+                }
+            }
+}
+//4楼
+.floor4{
+//  background: red;
+    margin-bottom: 20px;
+    .wrap{
+        width: 1190px;
+        margin: 0 auto;
+        height: 514px;
+//      background: pink;
+        h3{
+            height: 50px;
+            overflow: hidden;
+            font-weight: 600;
+            color: #333;
+            line-height: 50px;
+            font-size: 26px;
+            font-family: 'Microsoft YaHei';
+        }
+        .sanmin-left{
+            @include lou-left;
+        }
+        .sanbig-right{
+            @include loubig-right;
+        }
+        .sanbig-bottom{
+            @include lou-right-borrom;
+        }
+    }
+}
 
 
 

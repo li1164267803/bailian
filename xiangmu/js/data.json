@@ -1,0 +1,146 @@
+{
+	"floor3":{
+		"name" : "时尚大牌",
+		"list" : 
+			{
+				"id" : "shishang1",
+				"src1" : "shishang1.jpg",
+				"src2" : "shishang2.jpg",
+				"src3" : "shishang3.jpg",
+				"src4" : "shishang4.jpg",
+				"src5" : "shishang5.jpg",
+				"src6" : "shishang6.jpg",
+				"src7" : "shishang7.jpg",
+				"src8" : "shishang8.jpg",
+				"src9" : "shishang9.jpg",
+				"src10" : "shishang10.jpg",
+				"src11" : "shishang11.jpg",
+				"src12" : "shishang12.jpg",
+				"src13" : "shishang13.jpg",
+				"src14" : "shishang14.jpg",
+				"src15" : "shishang15.jpg",
+				"src16" : "shishang16.jpg"
+			}
+		
+	},
+	"floor4":{
+		"name" : "精品百货",
+		"list" : 
+			{
+				"id" : "jingpin1",
+				"src1" : "jingpin1.jpg",
+				"src2" : "jingpin2.jpg",
+				"src3" : "jingpin3.jpg",
+				"src4" : "jingpin4.jpg",
+				"src5" : "jingpin5.jpg",
+				"src6" : "jingpin6.jpg",
+				"src7" : "jingpin7.jpg",
+				"src8" : "jingpin8.jpg",
+				"src9" : "jingpin9.jpg",
+				"src10" : "jingpin10.jpg",
+				"src11" : "jingpin11.jpg",
+				"src12" : "jingpin12.jpg",
+				"src13" : "jingpin13.jpg",
+				"src14" : "jingpin14.jpg",
+				"src15" : "jingpin15.jpg",
+				"src16" : "jingpin16.jpg"
+			}
+		
+	},
+	"floor5":{
+		"name" : "个户清洁",
+		"list" : 
+			{
+				"id" : "gehu1",
+				"src1" : "gehu1.jpg",
+				"src2" : "gehu2.jpg",
+				"src3" : "gehu3.jpg",
+				"src4" : "gehu4.jpg",
+				"src5" : "gehu5.jpg",
+				"src6" : "gehu6.jpg",
+				"src7" : "gehu7.jpg",
+				"src8" : "gehu8.jpg",
+				"src9" : "gehu9.jpg",
+				"src10" : "gehu10.jpg",
+				"src11" : "gehu11.jpg",
+				"src12" : "gehu12.jpg",
+				"src13" : "gehu13.jpg",
+				"src14" : "gehu14.jpg",
+				"src15" : "gehu15.jpg",
+				"src16" : "gehu16.jpg"
+			}
+		
+	},
+	"floor6":{
+		"name" : "母婴玩具",
+		"list" : 
+			{
+				"id" : "muying1",
+				"src1" : "muying1.jpg",
+				"src2" : "muying2.jpg",
+				"src3" : "muying3.jpg",
+				"src4" : "muying4.jpg",
+				"src5" : "muying5.jpg",
+				"src6" : "muying6.jpg",
+				"src7" : "muying7.jpg",
+				"src8" : "muying8.jpg",
+				"src9" : "muying9.jpg",
+				"src10" : "muying10.jpg",
+				"src11" : "muying11.jpg",
+				"src12" : "muying12.jpg",
+				"src13" : "muying13.jpg",
+				"src14" : "muying14.jpg",
+				"src15" : "muying15.jpg",
+				"src16" : "muying16.jpg"
+			}
+		
+	},
+	"floor7":{
+		"name" : "家居家纺",
+		"list" : 
+			{
+				"id" : "jiaju1",
+				"src1" : "jiaju1.jpg",
+				"src2" : "jiaju2.jpg",
+				"src3" : "jiaju3.jpg",
+				"src4" : "jiaju4.jpg",
+				"src5" : "jiaju5.jpg",
+				"src6" : "jiaju6.jpg",
+				"src7" : "jiaju7.jpg",
+				"src8" : "jiaju8.jpg",
+				"src9" : "jiaju9.jpg",
+				"src10" : "jiaju10.jpg",
+				"src11" : "jiaju11.jpg",
+				"src12" : "jiaju12.jpg",
+				"src13" : "jiaju13.jpg",
+				"src14" : "jiaju14.jpg",
+				"src15" : "jiaju15.jpg",
+				"src16" : "jiaju16.jpg"
+			}
+		
+	},
+	"floor8":{
+		"name" : "3C数码",
+		"list" : 
+			{
+				"id" : "shuma1",
+				"src1" : "shuma1.jpg",
+				"src2" : "shuma2.jpg",
+				"src3" : "shuma3.jpg",
+				"src4" : "shuma4.jpg",
+				"src5" : "shuma5.jpg",
+				"src6" : "shuma6.jpg",
+				"src7" : "shuma7.jpg",
+				"src8" : "shuma8.jpg",
+				"src9" : "shuma9.jpg",
+				"src10" : "shuma10.jpg",
+				"src11" : "shuma11.jpg",
+				"src12" : "shuma12.jpg",
+				"src13" : "shuma13.jpg",
+				"src14" : "shuma14.jpg",
+				"src15" : "shuma15.jpg",
+				"src16" : "shuma16.jpg"
+			}
+		
+	}
+}

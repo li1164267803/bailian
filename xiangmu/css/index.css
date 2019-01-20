@@ -865,7 +865,6 @@ i {
 .floor1 .wrap .floor1-left .xia-ol li a {
   display: block;
   height: 6px;
-  background: red;
   width: 20px;
 }
 .floor1 .wrap .floor1-right {
@@ -953,7 +952,6 @@ i {
 .floor2 .wrap .floor2-left .xia-ol li a {
   display: block;
   height: 6px;
-  background: red;
   width: 20px;
 }
 .floor2 .wrap .floor2-right {
@@ -987,6 +985,227 @@ i {
   float: left;
   border-right: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
+}
+
+.floor3 {
+  margin-bottom: 20px;
+}
+.floor3 .wrap {
+  width: 1190px;
+  margin: 0 auto;
+  height: 514px;
+}
+.floor3 .wrap h3 {
+  height: 50px;
+  overflow: hidden;
+  font-weight: 600;
+  color: #333;
+  line-height: 50px;
+  font-size: 26px;
+  font-family: 'Microsoft YaHei';
+}
+.floor3 .wrap .sanmin-left {
+  float: left;
+  width: 305px;
+  height: 464px;
+  overflow: hidden;
+  position: relative;
+}
+.floor3 .wrap .sanmin-left img {
+  width: 306px;
+  height: 464px;
+}
+.floor3 .wrap .sanmin-left .xia-ul {
+  width: 100%;
+  position: absolute;
+  display: flex;
+}
+.floor3 .wrap .sanmin-left .xia-ul li {
+  float: left;
+  width: 305px;
+  height: 430px;
+}
+.floor3 .wrap .sanmin-left .xia-ol li {
+  width: 30px;
+  height: 6px;
+  background: #fff;
+  position: relative;
+  z-index: 20;
+  float: left;
+  top: 340px;
+  left: 42px;
+}
+.floor3 .wrap .sanmin-left .xia-ol li a {
+  display: block;
+  height: 6px;
+  width: 20px;
+}
+.floor3 .wrap .sanmin-right {
+  width: 884px;
+  float: left;
+}
+.floor3 .wrap .sanmin-right ul {
+  border-top: 2px solid #ebebeb;
+}
+.floor3 .wrap .sanmin-right ul img {
+  display: block;
+}
+.floor3 .wrap .sanmin-right ul .fast2-img {
+  width: 221px;
+  height: 300px;
+}
+.floor3 .wrap .sanmin-right ul .last-img {
+  background: #FFF;
+  width: 221px;
+}
+.floor3 .wrap .sanmin-right ul .last-img img {
+  width: 220px;
+  height: 97px;
+}
+.floor3 .wrap .sanmin-right ul li {
+  overflow: hidden;
+  box-sizing: border-box;
+  float: left;
+  border-right: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+.floor3 .wrap .sanmin-bottom {
+  width: 883px;
+  float: left;
+  border-bottom: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+}
+.floor3 .wrap .sanmin-bottom a {
+  float: left;
+  width: 147px;
+  height: 62px;
+  text-align: center;
+}
+
+.floor4 {
+  margin-bottom: 20px;
+}
+.floor4 .wrap {
+  width: 1190px;
+  margin: 0 auto;
+  height: 514px;
+}
+.floor4 .wrap h3 {
+  height: 50px;
+  overflow: hidden;
+  font-weight: 600;
+  color: #333;
+  line-height: 50px;
+  font-size: 26px;
+  font-family: 'Microsoft YaHei';
+}
+.floor4 .wrap .sanmin-left {
+  float: left;
+  width: 305px;
+  height: 464px;
+  overflow: hidden;
+  position: relative;
+}
+.floor4 .wrap .sanmin-left img {
+  width: 306px;
+  height: 464px;
+}
+.floor4 .wrap .sanmin-left .xia-ul {
+  width: 100%;
+  position: absolute;
+  display: flex;
+}
+.floor4 .wrap .sanmin-left .xia-ul li {
+  float: left;
+  width: 305px;
+  height: 430px;
+}
+.floor4 .wrap .sanmin-left .xia-ol li {
+  width: 30px;
+  height: 6px;
+  background: #fff;
+  position: relative;
+  z-index: 20;
+  float: left;
+  top: 340px;
+  left: 42px;
+}
+.floor4 .wrap .sanmin-left .xia-ol li a {
+  display: block;
+  height: 6px;
+  width: 20px;
+}
+.floor4 .wrap .sanbig-right {
+  width: 884px;
+  float: left;
+}
+.floor4 .wrap .sanbig-right .sanbig-right-top {
+  width: 883px;
+  height: 301px;
+  display: flex;
+  border-top: 2px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+.floor4 .wrap .sanbig-right .sanbig-big {
+  width: 442px;
+  height: 300px;
+  overflow: hidden;
+  border-right: 2px solid #ebebeb;
+  border-bottom: 2px solid #ebebeb;
+}
+.floor4 .wrap .sanbig-right .sanbing-zhong {
+  width: 221px;
+  height: 300px;
+  overflow: hidden;
+  border-right: 1px solid #ebebeb;
+}
+.floor4 .wrap .sanbig-right .sanbing-rig {
+  width: 220px;
+  height: 300px;
+  overflow: hidden;
+}
+.floor4 .wrap .sanbig-right .sanbing-rig a {
+  width: 220px;
+  height: 151px;
+  display: block;
+}
+.floor4 .wrap .sanbig-right .sanbing-rig a img {
+  margin-top: 25px;
+}
+.floor4 .wrap .sanbig-right ul img {
+  display: block;
+}
+.floor4 .wrap .sanbig-right ul .fast2-img {
+  width: 221px;
+  height: 300px;
+}
+.floor4 .wrap .sanbig-right ul .last-img {
+  background: #FFF;
+  width: 221px;
+}
+.floor4 .wrap .sanbig-right ul .last-img img {
+  width: 220px;
+  height: 97px;
+}
+.floor4 .wrap .sanbig-right ul li {
+  overflow: hidden;
+  box-sizing: border-box;
+  float: left;
+  border: 1px solid #ebebeb;
+  border-left: none;
+}
+.floor4 .wrap .sanbig-bottom {
+  width: 883px;
+  float: left;
+  border-bottom: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+}
+.floor4 .wrap .sanbig-bottom a {
+  float: left;
+  width: 147px;
+  height: 62px;
+  text-align: center;
 }
 
 @font-face {
