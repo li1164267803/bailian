@@ -66,14 +66,7 @@ window.onload = function(){
 		$(this).find("img").stop().animate( {width:140,height:140},300 )
 	})
 	//图片的轮播
-	/*var a = $(".floor1 .xia-ol li a");
-	var b = $(".floor1 .xia-ul");
-	var c = $(".floor1 .xia-ul li");
-	var d = $(".floor1 .xia-ol li")*/
-	new gouzhao( $(".floor1 .xia-ol li a"),$(".floor1 .xia-ul"),$(".floor1 .xia-ul li"),$(".floor1 .xia-ol li")).init();
-	new gouzhao( $(".floor2 .xia-ol li a"),$(".floor2 .xia-ul"),$(".floor2 .xia-ul li"),$(".floor2 .xia-ol li")).init();
-//	new gouzhao( x ,e,r,t).init();
-	
+	new gouzhao( $(".box-xia .xia-ol li a"),$(".box-xia .xia-ul"),$(".box-xia .xia-ul li"),$(".box-xia .xia-ol li")).init();	
 	function gouzhao(obj,obj1,obj2,obj3 ){
 /*		obj = $(".xia-ol li a");
 		obj1 = $(".xia-ul");
@@ -81,12 +74,12 @@ window.onload = function(){
 		obj3 = $(".xia-ol li");*/
 		var timerIndex = 0;//记录a标签的位置
 		var timerOindex = 0;//记录图片的位置
-		var olaTimer = null;
+		obj.olaTimer = null;
 		flagTimer = true;//开关变量
 			this.init = function( ){
 //				console.log(obj,boj1,boj2,obj3)
 			obj.eq( timerIndex ).css("width",0)
-			olaTimer = setInterval( olaplay,100 );
+			obj.olaTimer = setInterval( olaplay,100 );
 			function olaplay(){
 //				console.log(12)
 				var nowWidth = parseInt( obj.eq( timerIndex ).width() )
@@ -117,39 +110,39 @@ window.onload = function(){
 			}
 			//鼠标划上轮播图停止
 			obj2.hover(function(){
-				clearInterval( olaTimer )
+				clearInterval( obj.olaTimer )
 				var index = $(this).index();
 				flagTimer = false;
 				obj.eq(index).css("width",30);
 				return false;
 			},function(){
-				olaTimer = setInterval( olaplay ,100 );
+				obj.olaTimer = setInterval( olaplay ,100 );
 				obj.eq(timerOindex).css("width",0);
 				flagTimer = true;
 				return false;
 			}).bind(this)
 			//鼠标划上ola切换图片
 			obj3.hover(function(){
-				clearInterval( olaTimer )
+				clearInterval( obj.olaTimer )
 				var index = $(this).index();
 				obj1.animate( {left : -305 * index} );
-				$(this).find("a")
-					   .css( {"width" : "30px" , "background" : "938f7f"} )
-						 .end()
-						 .siblings()
-						 .find("a")
-						 .css("width",0)
+				 $(this).find("a")
+					   	.css( {"width" : "30px" , "background" : "938f7f"} )
+						.end()
+						.siblings()
+						.find("a")
+						.css("width",0)
 				flagTimer = false;
 				return false;
 			},function(){
 				timerIndex = timerOindex = $(this).index();
-				$(this).find("a")
+				 $(this).find("a")
 					    .css("width",0)
 					    .end()
 						.siblings()
 						.find("a")
 						.css("width",0)
-				olaTimer = setInterval( olaplay ,100 );
+				obj.olaTimer = setInterval( olaplay ,100 );
 				flagTimer = true;
 				return false;
 			}).bind(this)
@@ -193,6 +186,7 @@ window.onload = function(){
 		url:"js/data.json?id="+new Date().getTime(),
 		async:true,
 		success : function(json){
+			var box = $(".floor-box")
 //			console.log(json)
 			var jsonindex = 0;
 			var strlou = "";
@@ -202,7 +196,7 @@ window.onload = function(){
 				/*console.log( json[cname])
 				console.log( json[cname].list.src1 )*/
 				if( cname == "floor4" || cname == "floor7"){
-					strbig = `<div class="floor4">
+					strbig = `<div class="floor4 Louti">
 									<div class="wrap">
 										<h3>${json[cname].name}</h3>
 										<div class="sanmin-left">
@@ -247,11 +241,12 @@ window.onload = function(){
 										</div>
 									</div>
 								</div>`
-					$(".floor-box").append( strbig )
+//					$(".floor-box").append( strbig );
+					$(strbig).appendTo( $(".floor-box") )
 				}else{
-					strlou = `<div class="floor3">
+					strlou = `<div class="floor3 Louti">
 								<div class="wrap">
-									<h3>${json[cname].name}</h3>
+									<h3 name="qweq">${json[cname].name}</h3>
 									<div class="sanmin-left">
 										<ul class="xia-ul">
 											<li><a href=""><img src="img/index/${pro.src1}"/></a></li>
@@ -286,43 +281,135 @@ window.onload = function(){
 									</div>
 								</div>
 							</div>`
-					$(".floor-box").append( strlou )
+//					$(".floor-box").append( strlou );
+					$(strlou).appendTo( $(".floor-box") )
 				}
 			}
+//			new gouzhao(  $(".floor3 .xia-ol li a"),  $(".floor3 .xia-ul"),  $(".floor3 .xia-ul li"),$(".floor3 .xia-ol li") ).init()
+//			new gouzhao(  $(".floor4 .xia-ol li a"),  $(".floor4 .xia-ul"),  $(".floor4 .xia-ul li"),$(".floor4 .xia-ol li") ).init()
+			var floorChil = $(".floor-box").children();
+//			console.log( floorChil )
+			var floorChil1 = floorChil.eq(0).find(".xia-ol li a");
+			var floorChil2 = floorChil.eq(0).find(".xia-ul");
+			var floorChil3 = floorChil.eq(0).find(".xia-ul li");
+			var floorChil4 = floorChil.eq(0).find(".xia-ol li");
+			new gouzhao(  floorChil1, floorChil2,  floorChil3,floorChil4 ).init();
+			
+			new gouzhao(  floorChil.eq(1).find(".xia-ol li a"), 
+						  floorChil.eq(1).find(".xia-ul"),
+						  floorChil.eq(1).find(".xia-ul li"),
+						  floorChil.eq(1).find(".xia-ol li") )
+						.init();
+			new gouzhao(  floorChil.eq(2).find(".xia-ol li a"), 
+						  floorChil.eq(2).find(".xia-ul"),
+						  floorChil.eq(2).find(".xia-ul li"),
+						  floorChil.eq(2).find(".xia-ol li") )
+						.init();
+			new gouzhao(  floorChil.eq(3).find(".xia-ol li a"), 
+						  floorChil.eq(3).find(".xia-ul"),
+						  floorChil.eq(3).find(".xia-ul li"),
+						  floorChil.eq(3).find(".xia-ol li") )
+						.init();
+			new gouzhao(  floorChil.eq(4).find(".xia-ol li a"), 
+						  floorChil.eq(4).find(".xia-ul"),
+						  floorChil.eq(4).find(".xia-ul li"),
+						  floorChil.eq(4).find(".xia-ol li") )
+						.init();
+			new gouzhao(  floorChil.eq(5).find(".xia-ol li a"), 
+						  floorChil.eq(5).find(".xia-ul"),
+						  floorChil.eq(5).find(".xia-ul li"),
+						  floorChil.eq(5).find(".xia-ol li") )
+						.init();
+			new gouzhao(  floorChil.eq(6).find(".xia-ol li a"), 
+						  floorChil.eq(6).find(".xia-ul"),
+						  floorChil.eq(6).find(".xia-ul li"),
+						  floorChil.eq(6).find(".xia-ol li") )
+						.init();
+			new gouzhao(  floorChil.eq(7).find(".xia-ol li a"), 
+						  floorChil.eq(7).find(".xia-ul"),
+						  floorChil.eq(7).find(".xia-ul li"),
+						  floorChil.eq(7).find(".xia-ol li") )
+						.init();
+			
+			//楼梯点击
+			var $alist = $(".loucheng a").not(".loulast")//获取楼层号
+			var $foor = $(".Louti")//获取楼层
+			var fooFlag = true;
+			$alist.click(function(){
+				fooFlag = false;
+				$(this).addClass("louhua")
+					   .siblings()
+					   .removeClass("louhua")
+				var index = $(this).index();
+				var t = $foor.eq(index).offset().top-100;
+				//滚动的距离
+				$("body,html").animate({scrollTop : t},1000,function(){
+					fooFlag = true;
+				})
+			})
+			//回到顶部
+			$(".loulast").click(function(){
+				$("html,body").animate( {scrollTop : 0},600,function(){
+					fooFlag = true;
+				} )
+			})
+			//滚动条操作
+			$(window).scroll(function(){
+				if(fooFlag){
+					var sTop = $(document).scrollTop();
+					var f = $foor.filter(function(){
+						return Math.abs( $(this).offset().top - sTop ) < $(this).height()/2;
+
+					 })
+				   	var findex = f.index();
+				   	if( findex != -1 ){
+				   		$alist.eq(findex)
+				   			  .addClass("louhua")
+				   			  .siblings()
+				   			  .removeClass("louhua");
+				   	}
+				   	if( sTop < 300 ){
+				   		$alist.removeClass()
+				   	}
+				}
+				
+			})
+		}
+	})
+	
+	//动态获取猜你喜欢
+	$.ajax({
+		type:"get",
+		url:"js/like.json?id="+new Date().getTime(),
+		async:true,
+		success : function(json){
+			var str = "";
+			for(var i = 0; i < json.list.length; i++){
+				var pro = json.list[i]
+				str += `<li>
+							<a class="a-img" href=""><img src="img/index/${pro.src}"/></a>
+							<p><a href="">${pro.str}</a></p>
+							<div class="like-money">
+								￥<span style="font-size: 18px;">${pro.monry}</span>
+								<a href="javascript:;">收藏</a>
+							</div>
+						</li>`
+				
+			}
+			$(".like-ol ol").html( str )
 		}
 	});
-	var x = $(".floor3 .xia-ol li a")
-	var e = $(".floor3 .xia-ul")
-	var r = $(".floor3 .xia-ul li")
-	var t = $(".floor3 .xia-ol li")
-	var nn = document.querySelector(".floor-box")
+	//隐藏楼层号
+	$(window).scroll(function(){
+		var Top = $(window).scrollTop()
+		if( Top < 1000 ){
+			$(".loucheng").css("display","none")
+		}else{
+			$(".loucheng").css("display","block")
+		}
+		
+	})
 
-//	var pp = $(".floor-box").find(".floor3")
-//	var nn = document.getElementsByClassName(".floor-box")[1]
-//	var nn1 = $(".floor2")
-//	new gouzhao( x, e ,r , t).init()
-var ool = null;
-	$("body,html").on("mouseenter",".floor3 .xia-ol li a",function(){
-		xiaola = $(this);
-		console.log(123)
-	}).on("mouseenter",".floor3 .xia-ul",function(){
-		xiaul = $(this)
-		console.log(456)
-	})
-	
-	$(document).click(function(){
-		console.log(xiaola)
-		console.log( xiaul )
-	})
-/*	$(".floor-box").on("mouseenter",function(){
-		console.log(222222222)
-	})*/
-	
-/*	nn.onmouseenter = function(){
-		console.log(1111111111)
-	}*/
-/*	pp.hover(function(){
-		console.log(123)
-	})
-*/
+
+
 }

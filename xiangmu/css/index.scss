@@ -16,9 +16,10 @@ i{
 .fileheader{
     position: fixed;
     width: 100%;
-    z-index: 999999;
+    z-index: 9999;
     background: #fff;
     display: none;
+    box-shadow: 0 3px 3px #eee;
     .wrap{
         width: 1190px;
         height: 70px;
@@ -71,10 +72,64 @@ i{
                             height: 29px;
                             line-height: 29px;
                             width: 203px;
+                             &:hover{
+                                .L-show-show{
+                                    display: flex;
+                                }
+                            }
+                            .L-show-show{
+                                display: none;
+                                width: 990px;
+                                height: 429px;
+                                background: #fff;
+                                position: absolute;
+                                z-index: 9;
+                                left: 203px;
+                                top: 0;
+//                              display: flex;
+                                border: 1px solid #dfdfdf;
+                                .L-show-left{
+                                    width: 719px;
+                                    height: 432px;
+                                    float: left;
+                                }
+                                .L-show-right{
+                                    width: 240px;
+                                    height: 422px;
+                                    img{
+                                        width: 240px;
+                                        height: 203px;
+                                        display: inline-block;
+                                        margin-top: 5px;
+                                    }
+                                }
+                                ol{
+                                    width: auto;
+                                    height: auto;
+                                    float: left;
+                                    li{
+                                        width: 719px;
+                                        margin: 10px 0 0 5px;
+                                        height: auto;
+                                        text-align: left;
+                                        &:hover{
+                                            background: none;
+                                        }
+                                        span{
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            color: black;
+                                        }
+                                        a{
+                                            color: #666666;
+                                        }
+                                        
+                                    }
+                                }
+                            }
                             a{
                                 font-size: 10px;
                                 color: #fff;
-                                float:left;
                                 margin-left: 12px;
                                 line-height: 29px;
                                 &:hover{
@@ -473,7 +528,7 @@ i{
         left: 50%;
         top:5px;
         margin-left: 393px;
-        z-index: 9999;
+        z-index: 99;
         font-size: 12px;
         .rig-header{
             .tou{
@@ -630,7 +685,7 @@ i{
                         position: absolute;
                         left: 0;
                         top: 35px;
-                        z-index: 9999;
+                        z-index: 999;
                         width: 203px;
                         height: 422px;
                         background: #353b33;
@@ -641,6 +696,59 @@ i{
                             height: 29px;
                             line-height: 29px;
                             width: 203px;
+                            &:hover{
+                                .L-show-show{
+                                    display: flex;
+                                }
+                            }
+                            .L-show-show{
+                                display: none;
+                                width: 990px;
+                                height: 429px;
+                                background: #fff;
+                                position: absolute;
+                                z-index: 9;
+                                left: 203px;
+                                top: 0;
+//                              display: flex;
+                                border: 1px solid #dfdfdf;
+                                .L-show-left{
+                                    width: 719px;
+                                    height: 432px;
+                                    float: left;
+                                }
+                                .L-show-right{
+                                    width: 240px;
+                                    height: 422px;
+                                    img{
+                                        width: 240px;
+                                        height: 203px;
+                                        display: inline-block;
+                                        margin-top: 5px;
+                                    }
+                                }
+                                ol{
+                                    width: auto;
+                                    height: auto;
+                                    float: left;
+                                    li{
+                                        width: 719px;
+                                        margin: 10px 0 0 5px;
+                                        height: auto;
+                                        &:hover{
+                                            background: none;
+                                        }
+                                        span{
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                        }
+                                        a{
+                                            color: #666666;
+                                        }
+                                        
+                                    }
+                                }
+                            }
                             a{
                                 font-size: 10px;
                                 color: #fff;
@@ -850,7 +958,7 @@ i{
 //foor楼层
 .floor1{
 //  background: red;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     .wrap{
         width: 1190px;
         margin: 0 auto;
@@ -944,7 +1052,7 @@ i{
 //二楼
 .floor2{
 //  background: red;
-    margin-bottom: 20px;
+     padding-bottom: 20px;
     .wrap{
         width: 1190px;
         margin: 0 auto;
@@ -1110,12 +1218,13 @@ i{
             width: 147px;
             height: 62px;
             text-align: center;
+            line-height: 6;
         }
 }
 //3楼
 .floor3{
 //  background: red;
-    margin-bottom: 20px;
+     padding-bottom: 20px;
     .wrap{
         width: 1190px;
         margin: 0 auto;
@@ -1207,7 +1316,7 @@ i{
 //4楼
 .floor4{
 //  background: red;
-    margin-bottom: 20px;
+     padding-bottom: 20px;
     .wrap{
         width: 1190px;
         margin: 0 auto;
@@ -1228,16 +1337,275 @@ i{
         .sanbig-right{
             @include loubig-right;
         }
-        .sanbig-bottom{
+        .sanmin-bottom{
             @include lou-right-borrom;
         }
     }
 }
 
+//楼层号
+.loucheng{
+    position: fixed;
+    display: none;
+    top: 52%;
+    overflow: hidden;
+    float: left;
+    right: 50%;
+    width: 50px;
+    height: 449px;
+    z-index: 999;
+    margin-right: 602px;
+    margin-top: -230px;
+    background: url(//img.iblimg.com/respc-1/resources/v4.2/css/i/barnav3.jpg) no-repeat 0 0;
+    a{
+        display: block;
+        width: 30px;
+        height: 42px;
+        line-height: 16px;
+        padding: 0 10px;
+        padding-top: 7px;
+        text-align: center;
+        color: black;
+        font-family: '微软雅黑';
+        font-size: 10px;
+        &:hover{
+            background: #ff6f6f;
+        }
+    }
+    .louhua{
+        background: #ff6f6f;
+    }
+    .loulast{
+        background: url(../img/index/top.png) no-repeat center 5px;
+        padding-top: 20px;
+    }
+}
 
+//猜你喜欢
+.like{
+    height: auto;
+    .wrap{
+        width: 1190px;
 
+        margin: 0 auto;
+        background: pink;
+        .like-like{
+            text-align: center;
+            font-size: 24px;
+            height: 30px;
+            background: red;
+            line-height: 24px;
+            background: url(//img.iblimg.com/respc-1/resources/v4.2/css/i/guess_bg.jpg) repeat-x 0 center;
+            .love{
+                width: 255px;
+                padding-left: 65px;
+                height: 30px;
+                margin: 0 auto;
+                background: #fff url(//img.iblimg.com/respc-1/resources/v4.2/css/i/guess_love.jpg) no-repeat 30px center;
+            }
+            span{
+                margin-left: 5px;
+                font-size: 16px;
+                color: #999;
+            }
+        }
+        .featured_log{
+                text-align: right;
+                margin-bottom: 14px;
+                font-size: 14px;
+                font-family: 微软雅黑;
+                color: rgb(153, 153, 153);
+                padding-right: 5px;
+                a{
+                    color: #ff6f6f;
+                }
+        }
+        .like-ol{
+            background: #fff;
+            height: auto;
+            overflow: hidden;
+            li{
+                height: 338px;
+                width: 226px;
+                background: #fff;
+                margin: 0 5px;
+                float: left;
+                border: 1px solid #e4e4e4;
+                .a-img{
+                    img{
+                        margin-left: 3px;
+                        margin-top: 2px;
+                    }
+                }
+                p{
+                    height: 42px;
+                    font-size: 14px;
+                    padding: 0 11px;
+                    line-height: 21px;
+                    overflow: hidden;
+                    a{
+                        font-size: 14px;
+                        color: #666666;
+                    }
+                    a:hover{
+                        text-decoration: underline;
+                    }
+                }
+                .like-money{
+                    padding: 0 11px;
+                    height: 26px;
+                    margin-top: 3px;
+                    font-size: 12px;
+                    color: #ff6f6f;
+                    a{
+                        float: right;
+                        padding: 0 10px 0 25px;
+                        height: 20px;
+                        margin-top: 3px;
+                        line-height: 18px;
+                        border: 1px solid #eee;
+                        border-radius: 11px;
+                        color: #999;
+                        background: url(//img.iblimg.com/respc-1/resources/v4.2/css/i/guess_ic1.jpg) no-repeat 7px 4px;
+                       &:hover{
+                           color: #ff6f6f;
+                           background-position: 7px -27px;
+                       }
+                    }
+                }
+            }
+        }
+    }
+}
 
+//右侧的固定登录购物车
+.right-slidebar{
+    width: 314px;
+    height: 700px;
+    background: pink;
+    position: fixed;
+    z-index: 99999;
+    right: 0;
+    top: 0;
+    .slidebar-min{
+        width: 38px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 999999;
+        height: 100%;
+        background: black;
+    }
+    .slidebar-box{
+        width: 276px;
+        height: 100%;
+        background: red;
+        position: absolute;
+        z-index: 99999;
+        top:0;
+        right: 0;
+        .box-top{
+            height: 44px;
+            background: #f2f2f2;
+            line-height: 44px;
+            .box-jian{
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: url(//img.iblimg.com/respc-1/resources/v4.2/widget/sidebar/i/sidebar_in.png) no-repeat 0 -44px;
+                height: 16px;
+                line-height: 16px;
+                font-size: 16px;
+                font-family: iconfont;
+                width: 16px;
+                margin: 14px 0 0 18px;
+                cursor: pointer;
+                color: #999;
+            }
+        }
+        .box-bottom{
+            height: 100%;
+            width: 100%;
+            background: #fff;
+            ul{
+                li{
+                    color: #333;
+                    border: 1px solid #ffba22;
+                    line-height: 18px;
+                    background: #fffdeb url(//img.iblimg.com/respc-1/resources/v4.1/css/i/error0001.png) 7px 7px no-repeat;
+                    padding: 5px 0 5px 30px;
+                }
+            }
+            p{
+                float: right;
+                font-size: 12px;
+                color: #666666;
+                margin-bottom: 15px;
+                margin-right: 20px;
+            }
+            .bottom-top{
+                margin-top: 70px;
+                line-height: 28px;
+                padding-bottom: 32px;
+                h3{
+                    float: left;
+                    font-size: 20px;
+                    margin-left: 18px;
+                    font-weight: 300;
+                }
+                a{
+                    float: right;
+                    margin-right: 16px;
+                    font-size: 12px;
+                }
+            }
+            form{
+                margin-top: 14px;
+                .input-box{
+                    width: 240px;
+                    height: auto;
+                    margin-top: 5px;
+                    margin-bottom: 10px;
+                    margin-left: 18px;
 
+                }
+                .inputt{
+                    box-sizing: border-box;
+                    width: 240px;
+                    height: 38px;
+                    border: 1px solid #cccccc;
+                    padding-left: 38px;
+                    background: #FFF url(//img.iblimg.com/respc-1/resources/v4.1/css/i/userpic.png) 10px center no-repeat;
+                    
+                }
+                .inputt1{
+                    background: #FFF url(//img.iblimg.com/respc-1/resources/v4.1/css/i/passwordpic.png) 10px center no-repeat;
+                }
+                .yanzheng{
+                    box-sizing: border-box;
+                    width: 140px;
+                    height: 38px;
+                    border: 1px solid #cccccc;
+                    padding-left: 38px;
+                    background: #FFF url(//img.iblimg.com/respc-1/resources/v4.1/css/i/userpic.png) 10px center no-repeat;
+                }
+                .btn{
+                    width: 240px;
+                    height: 38px;
+                    background: #e6133c;
+                    border: none;
+                    color: #fff;
+                    font-size: 16px;
+                    margin-left: 18px;
+                    &:hover{
+                        background: red;
+                    }
+                }
+                
+            }
+        }
+    }
+}
 
 
 
