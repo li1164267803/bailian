@@ -345,7 +345,8 @@
 //				console.log(json)
 				if(flag){
 					arr.push( json )
-					alert("注册成功")
+					alert("注册成功");
+					location.href = "index.html"
 				}
 				setCookie("admin",JSON.stringify(arr));
 				console.log(arr)

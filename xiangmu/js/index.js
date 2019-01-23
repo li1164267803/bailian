@@ -7,6 +7,11 @@ window.onload = function(){
 			$(".fileheader").slideUp(200)
 		}
 	})
+	//判断是否已经登录
+	var denglustr = getCookie('admin')[0].flagName;
+	if( denglustr ){
+		$('.bl-right ul li').eq(0).html( '尊敬的  '+denglustr+ ' 您好！' )
+	}
 //	顶部左边划上小箭头
 	$(".bl-left").hover(function(){
 		$(".gang").html("&nbsp;");
@@ -21,7 +26,12 @@ window.onload = function(){
 	},function(){
 		$(this).find("i").removeClass().addClass("test-normal")
 	})
-	
+//	banner图右的鼠标划上
+	$('.right-bottom li a').hover(function(){
+		$(this).find('div').css('background-position-y',-28)
+	},function(){
+		$(this).find('div').css('background-position-y',0)
+	})
 //	banner轮播图
 	var ulist = $(".banner-wrap .banner-ul").find("li");
 	var olist = $(".banner-wrap .banner-ol").find("li");
@@ -577,6 +587,10 @@ window.onload = function(){
 	})
 	var slidebar = $('.slidebar-min').children().not(".tttt");
 	slidebar.click(function(){
+		$('.right-slidebar').animate({ right : 0});
+	})
+	//页面最上方登录按钮
+	$('.denglu').click(function(){
 		$('.right-slidebar').animate({ right : 0});
 	})
 }

@@ -599,6 +599,12 @@ i{
             a{
                 display: block;
                 text-align: center;
+                &:hover{
+                    color: red;
+                    div{
+                        background-position-y: -25px;
+                    }
+                }
                div{
                     width: 42px;
                     height: 28px;

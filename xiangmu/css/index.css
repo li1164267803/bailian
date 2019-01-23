@@ -583,6 +583,12 @@ i {
   display: block;
   text-align: center;
 }
+.banner .right-bottom li a:hover {
+  color: red;
+}
+.banner .right-bottom li a:hover div {
+  background-position-y: -25px;
+}
 .banner .right-bottom li a div {
   width: 42px;
   height: 28px;

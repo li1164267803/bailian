@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/page.css"/>
 	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
 	<body>
 		<!--开头-->
 		<div class="head">
@@ -29,7 +30,7 @@
 				<!--顶部右边-->
 				<div class="bl-right">
 					<ul>
-						<li><a href="#"><i class="youjian" style="float: left;background-image: none;"><img src="img/zuce/youjian.gif" alt="" /></i><span class="denglu">请登录</span></a><a href="#"><span style="margin-right: 10px;">注册</span></a><b></b></li>
+						<li><a href="#"><i class="youjian" style="float: left;background-image: none;"><img src="img/zuce/youjian.gif" alt="" /></i><span class="denglu">请登录</span></a><a href="zuce.html"><span style="margin-right: 10px;">注册</span></a><b></b></li>
 						<li><div class="leftfont"><a href="">我的订单</a></div><b></b></li>
 						<li><div class="leftfont"><a href="">我的百联<i class=".test-normal"></i></a></div><b></b>
 							<dl class="right-hdi">
@@ -470,12 +471,20 @@
 				<div class="product-intro">
 					<div class="product-box">
 						<ul class="product-ul">
-							<li><img src="img/page/pingguo1_360x360.jpg"/></li>
+							<li style="z-index: 9;"><img src="img/page/pingguo1_360x360.jpg" id="smallimg"/></li>
 							<li><img src="img/page/pingguo2_360x360.jpg"/></li>
 							<li><img src="img/page/pingguo3_360x360.jpg"/></li>
-							<li><img src="img/page/pingguo4_360x360.jpg"/></li>
-							<li><img src="img/page/pingguo5_360x360.jpg"/></li>
+							<li><img src="img/page/pingguo2_360x360.jpg"/></li>
+							<li><img src="img/page/pingguo1_360x360.jpg"/></li>
+							<div id="mask"></div>
 						</ul>
+						<div id="big">
+							<img src="img/page/pingguo1_800x800.jpg" alt="" class="bigimg bigxian"/>
+							<img src="img/page/pingguo2_800x800.jpg" alt="" class="bigimg"/>
+							<img src="img/page/pingguo3_800x800.jpg" alt="" class="bigimg"/>
+							<img src="img/page/pingguo4_800x800.jpg" alt="" class="bigimg"/>
+							<img src="img/page/pingguo1_800x800.jpg" alt="" class="bigimg"/>
+						</div>
 					</div>
 					<div class="product-olbox">
 						<a class="left" href="javascript:;"></a>
@@ -485,14 +494,295 @@
 								<li><img src="img/page/pingguo1_360x360.jpg"/></li>
 								<li><img src="img/page/pingguo2_360x360.jpg"/></li>
 								<li><img src="img/page/pingguo3_360x360.jpg"/></li>
-								<li><img src="img/page/pingguo4_360x360.jpg"/></li>
-								<li><img src="img/page/pingguo5_360x360.jpg"/></li>
+								<li><img src="img/page/pingguo2_360x360.jpg"/></li>
+								<li><img src="img/page/pingguo1_360x360.jpg"/></li>
 							</ol>
 						</div>
-						
+						<!--分享-->
+						<div class="intro-meno-left">
+					        <div class="share-list show-share-list" style="cursor: pointer;">
+					            <a href="###" class="shar-list-icon" style="border: none;">分享</a> <i class="up"></i>
+					            <div class="bshare-custom share-list-detail">
+					                <a onclick="sharesina('华为（HUAWEI） Mate RS保时捷版手机 红色 6G+512G 512GB','http://product.bl.com/3793494.html')" href="javascript:void(0);" class="bshare-sinaminiblog" title="分享到新浪微博"></a>
+					                <a onclick="shareqq('华为（HUAWEI） Mate RS保时捷版手机 红色 6G+512G 512GB','http://product.bl.com/3793494.html')" href="javascript:void(0);" class="bshare-qqmb" title="分享到腾讯微博"></a>
+					            </div>
+					        </div>
+					        <div class="number">
+					            	商品编号 <span title="4000899599">4000899599</span>
+					        </div>
+					    </div>
+					    <!--分享结束-->
 					</div>
+				</div>
+				<!--右-->
+				<div class="fangyou">
+					<h3>华为(HUAWEI) Mste RS保时捷版手机 红色 6G+521G 521GB</h3>
+					<div class="jiage"><span class="xiaoshou">销售价</span><span class="xiaojia">￥11999.00</span></div>
+					<!--配送-->
+					<div class="peisong">
+						<b>配送</b>
+						<div class="peisong-show">
+							<p>上海黄浦区<i></i></p>
+							<div class="peisong-xianshi" style="display: none;">
+								<span class="xianshi-span">
+									<a href="javascript:;" class="active">省份</a>
+									<a href="javascript:;">城市</a>
+									<a href="javascript:;" style="border-right: 1px solid #ddd">县区</a>
+								</span>
+								<div id="ulbox">
+									<ul class="content" style="display: block;">
+										<li>省份1</li>
+										<li>省份2</li>
+										<li>省份3</li>
+										<li>省份4</li>
+										<li>省份5</li>
+										<li>省份6</li>
+										<li>省份7</li>
+										<li>省份8</li>
+										<li>省份9</li>
+										<li>省份10</li>
+										<li>省份11</li>
+										<li>省份12</li>
+										<li>省份13</li>
+										<li>省份14</li>
+										<li>省份15</li>
+										<li>省份16</li>
+										<li>省份17</li>
+										<li>省份18</li>
+										<li>省份19</li>
+										<li>省份20</li>
+										<li>省份21</li>
+										<li>省份22</li>
+										<li>省份23</li>
+										<li>省份24</li>
+										<li>省份25</li>
+										<li>省份26</li>
+										<li>省份27</li>
+										<li>省份28</li>
+										<li>省份29</li>
+										<li>省份30</li>
+										<li>省份31</li>
+										<li>省份32</li>
+										<li>省份33</li>
+										<li>省份34</li>
+									</ul>
+									<ul class="content" style="z-index: 97;">
+										<li>城市1</li>
+										<li>城市2</li>
+										<li>城市3</li>
+										<li>城市4</li>
+										<li>城市5</li>
+										<li>城市6</li>
+										<li>城市7</li>
+										<li>城市8</li>
+										<li>城市9</li>
+										<li>城市10</li>
+										<li>城市11</li>
+										<li>城市12</li>
+										<li>城市13</li>
+										<li>城市14</li>
+										<li>城市15</li>
+										<li>城市16</li>
+										<li>城市17</li>
+										<li>城市18</li>
+										<li>城市19</li>
+										<li>城市20</li>
+										<li>城市21</li>
+										<li>城市22</li>
+										<li>城市23</li>
+										<li>城市24</li>
+										<li>城市25</li>
+										<li>城市26</li>
+									</ul>
+									<ul class="content" style="z-index: 90;">
+										<li>县城1</li>
+										<li>县城2</li>
+										<li>县城3</li>
+										<li>县城4</li>
+										<li>县城5</li>
+										<li>县城6</li>
+										<li>县城7</li>
+										<li>县城8</li>
+										<li>县城9</li>
+										<li>县城10</li>
+										<li>县城11</li>
+										<li>县城12</li>
+										<li>县城13</li>
+										<li>县城14</li>
+										<li>县城15</li>
+										<li>县城16</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						满399元包邮
+					</div>
+					<p class="fuwu"><span>服务</span><span>由“瑞龙手机专营店”提供发货和售后服务</span></p>
+					<p class="fu-no"><span>· 不支持到店自提</span><span>· 不支持7天无理由退货</span><span>· 不支持货到付款</span></p>
+					<p class="jishen"><span>机身内存</span><span>521GB</span></p>
+					<p class="goumai"><span>购买数量</span>
+						<span class="maisuan">-</span>
+						<span class="neistr">1</span>
+						<span class="maisuan">+</span>
+						库存9件
+					</p>
+					<div class="last-bottom">
+						<a href="javascript:;">立即购买</a>
+						<a href="javascript:;">加入购物车</a>
+						<a href="javascript:;">收藏</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--右侧的固定登录购物车-->
+		<div class="right-slidebar">
+			<!--左侧导航栏-->
+			<div class="slidebar-min">
+				<div class="touxiang">
+					<div class="jian-right"></div>
+					<div class="jian-left"></div>
+					<i></i>
+					<p>我的信息</p>
+				</div>
+				<!--购物车-->
+				<div class="gouwu">
+					<i></i>
+					<span>购<br />物<br />车</span>
+					<b>0</b>
+				</div>
+				
+				<!--收藏-->
+				<div class="shouchang">
+					<div class="jian-right"></div>
+					<div class="jian-left"></div>
+					<i></i>
+					<p>我的收藏</p>
+				</div>
+				<div class="lishi">
+					<div class="jian-right"></div>
+					<div class="jian-left"></div>
+					<i></i>
+					<p>浏览历史</p>
+				</div>
+				<div class="erweima er">
+					<div class="jian-right"></div>
+					<div class="jian-left"></div>
+					<i></i>
+					<p><img src="//img22.iblimg.com/market-2/images/activity/1849148942.png"/></p>
+				</div>
+				<div class="kefu">
+					<div class="jian-right"></div>
+					<div class="jian-left"></div>
+					<i></i>
+					<p>我的客服</p>
+				</div>
+				<div class="TOP tttt">
+					<div class="jian-right"></div>
+					<div class="jian-left"></div>
+					<i></i>
+					<p>返回顶部</p>
+				</div>
+			</div>
+			<!--右侧显示区-->
+			<div class="slidebar-box">
+				<div class="box-top"><i class="box-jian"></i></div>
+				<div class="box-bottom">
+					<form action="" method="post" onsubmit="return false;">
+						<div class="bottom-top"><h3>会员登录</h3><a href="zuce.html" target="_blank">注册新账号</a></div>
+						<ul class="box-ulist">
+							<li>请输入用户名</li>
+							<li>请输入密码</li>
+							<li>请输入验证密码</li>
+							<li>账号不存在</li>
+							<li>密码错误</li>
+							<li>验证码错误</li>
+						</ul>
+						<div class="input-box"><input class="inputt" id="uname" type="text" placeholder="用户名/手机号/邮箱"/></div>
+						<div class="input-box"><input class="inputt inputt1" id="upwd" type="text" placeholder="密码"/></div>
+						<div class="input-box"><input class="yanzheng" id="uyan" type="text" placeholder="请输入验证码"/>
+							<div class="img-yan">
+								<img src="img/yanzheng/1413.png"/>
+							</div>
+						</div>
+						
+						<p>忘记密码?</p>
+						<input class="btn" type="button" value="登录"/>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--foot-->
+		<div class="footnav">
+			<div class="wrap">
+				<dl>
+					<dt class="bei1">新手入门</dt>
+					<dd><a href="">购物流程</a></dd>
+					<dd><a href="">会员介绍</a></dd>
+					<dd><a href="">常见问题</a></dd>
+					<dd><a href="">发票问题</a></dd>
+					<dd><a href="">联系客服</a></dd>
+				</dl>
+				<dl>
+					<dt class="bei2">配送服务</dt>
+					<dd><a href="">配送范围及运费</a></dd>
+					<dd><a href="">配送进度查询</a></dd>
+					<dd><a href="">自提服务</a></dd>
+					<dd><a href="">商品验货与签收</a></dd>
+				</dl>
+				<dl>
+					<dt class="bei3">支付方式</dt>
+					<dd><a href="">货到付款</a></dd>
+					<dd><a href="">在线支付</a></dd>
+				</dl>
+				<dl>
+					<dt class="bei4">售后服务</dt>
+					<dd><a href="">退换货政策</a></dd>
+					<dd><a href="">退换货流程</a></dd>
+					<dd><a href="">退款说明</a></dd>
+				</dl>
+				<dl>
+					<dt class="bei5">商家支持</dt>
+					<dd><a href="">商家入驻</a></dd>
+					<dd><a href="">商家规则</a></dd>
+					<dd><a href="">商家常见问题</a></dd>
+				</dl>
+			</div>
+		</div>
+		<!--最底部-->
+		<div class="footer">
+			<div class="footer-nav">
+				<div>
+					<a target="_blank" href="http://help.bl.com/articleDetailed.html?articleId=285&&categoryType=about">关于我们</a><span>|</span>
+					<a target="_blank" href="http://help.bl.com/articleDetailed.html?articleId=286&&categoryType=about">联系我们</a><span>|</span>
+					<a target="_blank" href="http://help.bl.com/articleDetailed.html?articleId=287&&categoryType=about">加盟合作</a><span>|</span>
+					<a target="_blank" href="http://help.bl.com/articleDetailed.html?articleId=288&&categoryType=about">诚征英才</a><span>|</span>
+					<a target="_blank" href="http://help.bl.com/articleDetailed.html?articleId=289&&categoryType=about">友情链接</a><span>|</span>
+				</div>
+				<div>
+					百联集团有限公司版权所有<span>|</span>客服电话：400-900-8800 <span>|</span>沪ICP备15028847号
+				</div>
+				<a target="_blank" href="https://res13.iblimg.com/respc-1/resources/v4.0/img/yaopingzigezheng.png">互联网药品信息服务资质证书编号：沪-（非营业性）-2016-0044</a><br />
+				<a target="_blank" href="http://promotion.bl.com/nc/PC_HDGL20180705000005986_6252.html">全渠道增值电信业务经营许可证</a>
+				<div>
+					<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010102002366">
+						<img src="https://res14.iblimg.com/respc-1/resources/v4.0/css/i/gongan.png" alt="" />
+						<span>沪公网安备 31010102002366号</span>
+					</a>
+					<a href="http://shwg.dianping.com/">
+						<img src="https://res15.iblimg.com/respc-1/resources/v4.1/widget/footer1200/i/wangjing.png" alt="" />
+						<span>网购大家评</span>
+					</a>
+					<a href="http://218.242.124.22:8081/businessCheck/verifKey.do?showType=extShow&serial=9031000020160729145737000001099658-SAIC_SHOW_310000-20160406145114141192&signData=MEYCIQCUhx+ulQL4t9jJgfgCH1oeTxexuWOVww3Hel3/UlRyLQIhAO2fVtZDl0EkYb0p/3M50cXqe694wDQoJNuUKNdQNOWf">
+						<img src="https://res12.iblimg.com/respc-1/resources/v4.1/widget/footer1200/i/gongs.png" alt="" width="20" height="21"/>
+						<span>上海工商</span>
+					</a>
+					<a href="http://promotion.bl.com/nc/PC_HDGL20170407000001552_1592.html">
+						<img src="https://res13.iblimg.com/respc-1/resources/v4.1/widget/footer1200/i/zhizhao.png" alt="" />
+						<span>经营执照</span>
+					</a>
 				</div>
 			</div>
 		</div>
 	</body>
 </html>
+<script src="js/page.js" type="text/javascript" charset="utf-8"></script>
