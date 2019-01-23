@@ -1,6 +1,10 @@
-window.onload = function(){
+
+	var $ulist = $(".box-ulist li");
+	$ulist.click(function(){
+		console.log(123)
+	})
 	$("#uname").blur(function(){
-		
+		console.log(1231213)
 	})
 	$("#upwd").blur(function(){
 		
@@ -29,4 +33,4 @@ window.onload = function(){
 			alert("用户名不存在")
 		}
 	})
-}
+

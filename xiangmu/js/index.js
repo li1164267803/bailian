@@ -410,6 +410,173 @@ window.onload = function(){
 		
 	})
 
-
-
+	//登录操作
+	var $ulist = $(".box-ulist li");
+	$("#uname").blur(function(){
+		var strname = $("#uname").val();
+		if( !strname ){
+			$ulist.eq(0).css("display","block")
+						.siblings()
+				  		.css("display","none");
+		}else{
+			$ulist.eq(0).css("display", "none")
+			$(this).css("color","#999999");
+		}
+	})
+	$("#upwd").blur(function(){
+		var strpwd = $("#upwd").val();
+		if( !strpwd ){
+			$ulist.eq(1).css("display","block")
+				  .siblings()
+				  .css("display","none")
+		}else{
+			$ulist.eq(1).css("display", "none")
+			$(this).css("color","#999999");
+		}
+	})
+	$("#uyan").blur(function(){
+		var stryan = $("#uyan").val();
+		if( !stryan ){
+			$ulist.eq(2).css("display","block")
+				  .siblings()
+				  .css("display","none")
+		}else{
+			$ulist.eq(2).css("display", "none")
+			$(this).css("color","#999999");
+		}
+	})
+	//换验证码
+	var vertiData = [];
+	var vertiIndex = 0;
+	$.ajax({
+		type:"get",
+		url:"json/verti.json",
+		async:true,
+		success : function(json){
+			console.log(json);
+			vertiData = json;
+			vertiIndex = rand(0,vertiData.length-1);
+			$('.img-yan img').attr('src', vertiData[vertiIndex].src )
+			console.log( vertiData[vertiIndex].src )
+		}
+	});
+	$('.img-yan img').click(function(){//点击切换验证码
+		vertiIndex = rand(0,vertiData.length-1);
+		$(this).attr('src', vertiData[vertiIndex].src )
+	})
+	
+	$(".btn").click(function(){
+//		if( fnName &&  )
+		var brr = getCookie("admin");
+		var name = $("#uname").val();
+		var pwd = $("#upwd").val();
+		var yan = $("#uyan").val();
+		var flag = true;
+		if( name ){
+			if( pwd ){
+				if( yan == vertiData[vertiIndex].ans ){//判断验证码
+					for( var i = 0; i < brr.length; i++ ){
+						if( brr[i].flagName == name ){
+							if( brr[i].flagPwd == pwd ){
+								alert("登录成功")
+								flag = false;
+								break;
+							}else{//密码错误
+								$ulist.eq(4).css("display","block")
+											  .siblings()
+											  .css("display","none")
+								flag = false;
+								break;
+							}
+						}
+					}
+					if(flag){//用户名不存在
+						$ulist.eq(3).css("display","block")
+											  .siblings()
+											  .css("display","none")
+					}
+				}else{//验证码不正确
+					$ulist.eq(5).css("display", "block")
+								.siblings()
+						 		.css("display","none")
+				}
+			}else{
+				$ulist.eq(1).css("display","block")
+				  .siblings()
+				  .css("display","none")
+			}
+			
+		}else{
+			$ulist.eq(0).css("display","block")
+				  .siblings()
+				  .css("display","none")
+		}
+		
+	})
+	
+//	鼠标划上左侧nav
+	var $leftNav = $('.slidebar-min').children().not(".er")
+	$leftNav.hover(function(){
+		$(this).css("background","#d62233")
+			   .find(".jian-right")
+			   .css("display","block")
+			   .end()
+			   .find(".jian-left")
+			   .css("display","block")
+			   .end()
+			   .find("p")
+			   .css("display","block")
+			   .animate( {left:-86},300 )
+	},function(){
+		$(this).css("background","")
+			   .find(".jian-right")
+			   .css("display","none")
+			   .end()
+			   .find(".jian-left")
+			   .css("display","none")
+			   .end()
+			   .find("p")
+			   .css("display","none")
+			   .animate({left:-43},200)
+	})
+	
+	$leftNav.click(function(){//点击添加颜色
+		$(this).addClass('lenav')
+			   .siblings()
+			   .removeClass("lenav")
+	})
+	$('.er').hover(function(){
+		$(this).css("background","#d62233")
+			   .find(".jian-right")
+			   .css("display","block")
+			   .end()
+			   .find(".jian-left")
+			   .css("display","block")
+			   .end()
+			   .find("p")
+			   .css("display","block")
+			   .animate( {left:-150},300 )
+	},function(){
+		$(this).css("background","")
+			   .find(".jian-right")
+			   .css("display","none")
+			   .end()
+			   .find(".jian-left")
+			   .css("display","none")
+			   .end()
+			   .find("p")
+			   .css("display","none")
+			   .animate({left:-110},200)
+	})
+	$('.TOP').click(function(){
+		$("html,body").animate( {scrollTop : 0},300)
+	})
+	$('.box-jian').click(function(){
+		$('.right-slidebar').animate({ right : -276});
+		$leftNav.eq(0).removeClass("lenav");
+	})
+	var slidebar = $('.slidebar-min').children().not(".tttt");
+	slidebar.click(function(){
+		$('.right-slidebar').animate({ right : 0});
+	})
 }

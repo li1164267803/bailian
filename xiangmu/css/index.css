@@ -1443,11 +1443,11 @@ i {
 
 .right-slidebar {
   width: 314px;
-  height: 700px;
-  background: pink;
+  height: 100%;
+  background: #f2f2f2;
   position: fixed;
   z-index: 99999;
-  right: 0;
+  right: -276px;
   top: 0;
 }
 .right-slidebar .slidebar-min {
@@ -1459,10 +1459,170 @@ i {
   height: 100%;
   background: black;
 }
+.right-slidebar .slidebar-min .lenav {
+  background: #d62233;
+}
+.right-slidebar .slidebar-min .jian-right {
+  position: absolute;
+  top: 14px;
+  right: 0;
+  display: none;
+  width: 6px;
+  height: 12px;
+  background: url(//img.iblimg.com/respc-1/resources/v4.2/widget/sidebar/i/sidebar_in.png) no-repeat 0 -108px;
+  border: 0;
+}
+.right-slidebar .slidebar-min .jian-left {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  display: none;
+  width: 6px;
+  height: 12px;
+  background: url(//img.iblimg.com/respc-1/resources/v4.2/widget/sidebar/i/sidebar_in.png) no-repeat -6px -108px;
+  border: 0;
+}
+.right-slidebar .slidebar-min p {
+  display: none;
+  position: absolute;
+  width: 86px;
+  font-size: 14px;
+  right: 0px;
+  text-align: center;
+  background: #fff;
+  height: 40px;
+  line-height: 40px;
+  top: 0;
+  z-index: -50;
+}
+.right-slidebar .slidebar-min .shouchang {
+  top: 200px;
+  width: 38px;
+  height: 40px;
+  position: relative;
+}
+.right-slidebar .slidebar-min .shouchang i {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: url(//img.iblimg.com/respc-1/resources/v4.2/widget/sidebar/i/sidebar_out.png) no-repeat 0 -40px;
+}
+.right-slidebar .slidebar-min .gouwu {
+  width: 43px;
+  background: #FFF;
+  position: relative;
+  top: 183px;
+  left: -5px;
+  z-index: 99999;
+  background-color: #333;
+  font-family: 'Microsoft YaHei';
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+  height: 174px;
+}
+.right-slidebar .slidebar-min .gouwu i {
+  width: 24px;
+  height: 18px;
+  margin-left: 12px;
+  margin-top: 36px;
+  background: url(//img.iblimg.com/respc-1/resources/v4.2/widget/sidebar/i/sidebar_out.png) no-repeat 0 -365px;
+  display: inline-block;
+}
+.right-slidebar .slidebar-min .gouwu span {
+  margin-top: 10px;
+  line-height: 15px;
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  margin-left: 14px;
+}
+.right-slidebar .slidebar-min .gouwu b {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #e6133c;
+  text-align: center;
+  display: block;
+  line-height: 18px;
+  color: #FFF;
+  margin-top: 10px;
+  color: #fff;
+  margin-left: 12px;
+}
+.right-slidebar .slidebar-min .touxiang {
+  position: relative;
+  top: 137px;
+  width: 38px;
+  height: 40px;
+}
+.right-slidebar .slidebar-min .touxiang i {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: url(//img.iblimg.com/respc-1/resources/v4.2/widget/sidebar/i/sidebar_out.png) no-repeat 0 0;
+}
+.right-slidebar .slidebar-min .lishi {
+  top: 201px;
+  width: 38px;
+  height: 40px;
+  position: relative;
+}
+.right-slidebar .slidebar-min .lishi i {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: url(//img.iblimg.com/respc-1/resources/v4.2/widget/sidebar/i/sidebar_out.png) no-repeat 0 -80px;
+}
+.right-slidebar .slidebar-min .kefu {
+  top: 322px;
+  width: 38px;
+  height: 40px;
+  position: relative;
+}
+.right-slidebar .slidebar-min .kefu i {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: url(//img.iblimg.com/respc-1/resources/v4.2/widget/sidebar/i/sidebar_out.png) no-repeat 0 -240px;
+}
+.right-slidebar .slidebar-min .TOP {
+  top: 322px;
+  width: 38px;
+  height: 40px;
+  position: relative;
+}
+.right-slidebar .slidebar-min .TOP i {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: url(//img.iblimg.com/respc-1/resources/v4.2/widget/sidebar/i/sidebar_out.png) no-repeat 0 -320px;
+}
+.right-slidebar .slidebar-min .erweima {
+  top: 320px;
+  width: 38px;
+  height: 40px;
+  position: relative;
+}
+.right-slidebar .slidebar-min .erweima i {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: url(//img.iblimg.com/respc-1/resources/v4.2/widget/sidebar/i/sidebar_out.png) no-repeat 0 -200px;
+}
+.right-slidebar .slidebar-min .erweima P {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: -135%;
+  width: 150px;
+  z-index: -100;
+}
+.right-slidebar .slidebar-min .erweima P img {
+  width: 100%;
+}
 .right-slidebar .slidebar-box {
   width: 276px;
   height: 100%;
-  background: red;
   position: absolute;
   z-index: 99999;
   top: 0;
@@ -1490,9 +1650,15 @@ i {
 .right-slidebar .slidebar-box .box-bottom {
   height: 100%;
   width: 100%;
-  background: #fff;
+  background: #f2f2f2;
+}
+.right-slidebar .slidebar-box .box-bottom ul {
+  width: 240px;
+  margin-left: 18px;
 }
 .right-slidebar .slidebar-box .box-bottom ul li {
+  display: none;
+  font-size: 10px;
   color: #333;
   border: 1px solid #ffba22;
   line-height: 18px;
@@ -1500,11 +1666,13 @@ i {
   padding: 5px 0 5px 30px;
 }
 .right-slidebar .slidebar-box .box-bottom p {
+  clear: both;
   float: right;
   font-size: 12px;
   color: #666666;
   margin-bottom: 15px;
   margin-right: 20px;
+  margin-top: 8px;
 }
 .right-slidebar .slidebar-box .box-bottom .bottom-top {
   margin-top: 70px;
@@ -1544,12 +1712,20 @@ i {
   background: #FFF url(//img.iblimg.com/respc-1/resources/v4.1/css/i/passwordpic.png) 10px center no-repeat;
 }
 .right-slidebar .slidebar-box .box-bottom form .yanzheng {
+  float: left;
   box-sizing: border-box;
   width: 140px;
   height: 38px;
   border: 1px solid #cccccc;
   padding-left: 38px;
   background: #FFF url(//img.iblimg.com/respc-1/resources/v4.1/css/i/userpic.png) 10px center no-repeat;
+}
+.right-slidebar .slidebar-box .box-bottom form .img-yan {
+  float: right;
+}
+.right-slidebar .slidebar-box .box-bottom form .img-yan img {
+  width: 100px;
+  height: 38px;
 }
 .right-slidebar .slidebar-box .box-bottom form .btn {
   width: 240px;
