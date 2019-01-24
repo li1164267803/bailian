@@ -8,9 +8,10 @@ window.onload = function(){
 		}
 	})
 	//判断是否已经登录
-	var denglustr = getCookie('admin')[0].flagName;
-	if( denglustr ){
-		$('.bl-right ul li').eq(0).html( '尊敬的  '+denglustr+ ' 您好！' )
+	var denglustr = getCookie('admin');
+	if( denglustr.length != 0 ){
+		var str =denglustr[0].flagName;
+		$('.bl-right ul li').eq(0).html( '尊敬的  '+str+ ' 您好！' )
 	}
 //	顶部左边划上小箭头
 	$(".bl-left").hover(function(){
@@ -463,11 +464,11 @@ window.onload = function(){
 		url:"json/verti.json",
 		async:true,
 		success : function(json){
-			console.log(json);
+//			console.log(json);
 			vertiData = json;
 			vertiIndex = rand(0,vertiData.length-1);
 			$('.img-yan img').attr('src', vertiData[vertiIndex].src )
-			console.log( vertiData[vertiIndex].src )
+//			console.log( vertiData[vertiIndex].src )
 		}
 	});
 	$('.img-yan img').click(function(){//点击切换验证码
